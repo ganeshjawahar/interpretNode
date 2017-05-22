@@ -10,7 +10,7 @@ import sys
 
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 CORES = multiprocessing.cpu_count()
-
+print CORES
 FLAG_preTrained = False
 
 
