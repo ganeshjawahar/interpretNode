@@ -6,6 +6,7 @@ import logging
 import gensim
 import time
 import os
+import sys
 
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 CORES = multiprocessing.cpu_count()
@@ -41,9 +42,9 @@ def main(model_params):
     #model_params['graph_file'] = str(i) + 'k_sim.txt'
     model = train(model_params)
     #if i==1:
-    model.save_word2vec_format('authorembeddings', binary=False)
+    model.save_word2vec_format(sys.argv[2], binary=False)
 
 #if __name__ == '__main__':
-model_params = {'graph_file': 'edgelist', 'num_walks': 10, 'walk_size': 80, 'embd_file': './embeddings/10d2v_200.txt', 'vec_size': 128, 'window': 5}
+model_params = {'graph_file': sys.argv[1], 'num_walks': 10, 'walk_size': 80, 'embd_file': './embeddings/10d2v_200.txt', 'vec_size': 128, 'window': 5}
 main(model_params)
 #getContext(model_params['graph_file'], model_params['num_walks'], model_params['walk_size'])
