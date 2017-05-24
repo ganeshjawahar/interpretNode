@@ -1,5 +1,7 @@
 # Created on 16th May 2016
 
+# python deepwalk_modified.py ../../feature_computation/papercitation/papercitation_directed /tmp/out
+
 import getWalks as gw
 import multiprocessing
 import logging
@@ -23,7 +25,7 @@ def writeAsText(random_walks):
     out_f.close()
 
 def getContext(graph_file, num_walks, walk_size):
-    graph = gw.load_edgelist(graph_file)
+    graph = gw.load_edgelist(graph_file, False)
     random_walks = gw.build_deepwalk_corpus(graph, num_walks, walk_size)
     #writeAsText(random_walks)
     return random_walks
