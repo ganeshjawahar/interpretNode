@@ -1,4 +1,13 @@
+embeddingmodel/deepwalk/o*
+embeddingmodel/line/linux/core
+embeddingmodel/line/linux/o*
+embeddingmodel/line/linux/w
+embeddingmodel/line/linux/p
+embeddingmodel/line/linux/a
 embeddingmodel/snap/examples/node2vec/core
+embeddingmodel/snap/examples/node2vec/m
+embeddingmodel/snap/examples/node2vec/w
+embeddingmodel/snap/examples/node2vec/a
 graphs/
 logs/
 *.egg

@@ -332,3 +332,377 @@ The output (if any) follows:
 2017-05-25 10:16:34,110 : INFO : training on 6522099 words took 131.6s, 49561 words/s
 2017-05-25 10:16:34,495 : INFO : storing 282216x128 projection weights into ../../graphs/embeddings/graph3_dw
 40
+Sender: LSF System <lsfadmin@irlbxph020.irl.in.ibm.com>
+Subject: Job 8103: <python deepwalk_modified.py ../../graphs/edgelist/graph3 ../../graphs/embeddings/graph3_dw> in cluster <cluster1> Done
+
+Job <python deepwalk_modified.py ../../graphs/edgelist/graph3 ../../graphs/embeddings/graph3_dw> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <cluster1>.
+Job was executed on host(s) <irlbxph020.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <cluster1>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/embeddingmodel/deepwalk> was used as the working directory.
+Started at Thu May 25 10:50:45 2017
+Results reported on Thu May 25 10:54:34 2017
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python deepwalk_modified.py ../../graphs/edgelist/graph3 ../../graphs/embeddings/graph3_dw
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               213.63 sec.
+    Max Memory :             1368 MB
+    Average Memory :         921.24 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Processes :          3
+    Max Threads :            83
+
+The output (if any) follows:
+
+2017-05-25 10:50:52,249 : INFO : make_consistent: made consistent in 0.606681108475s
+2017-05-25 10:50:52,390 : INFO : remove_self_loops: removed 1030 loops in 0.139773845673s
+2017-05-25 10:51:18,109 : INFO : collecting all words and their counts
+2017-05-25 10:51:18,133 : INFO : PROGRESS: at sentence #0, processed 0 words and 0 word types
+2017-05-25 10:51:18,214 : INFO : PROGRESS: at sentence #10000, processed 42228 words and 25148 word types
+2017-05-25 10:51:18,266 : INFO : PROGRESS: at sentence #20000, processed 84379 words and 45079 word types
+2017-05-25 10:51:18,315 : INFO : PROGRESS: at sentence #30000, processed 125026 words and 62517 word types
+2017-05-25 10:51:18,363 : INFO : PROGRESS: at sentence #40000, processed 166496 words and 78469 word types
+2017-05-25 10:51:18,415 : INFO : PROGRESS: at sentence #50000, processed 207402 words and 93249 word types
+2017-05-25 10:51:18,462 : INFO : PROGRESS: at sentence #60000, processed 249472 words and 106958 word types
+2017-05-25 10:51:18,508 : INFO : PROGRESS: at sentence #70000, processed 290245 words and 120108 word types
+2017-05-25 10:51:18,555 : INFO : PROGRESS: at sentence #80000, processed 331370 words and 132547 word types
+2017-05-25 10:51:18,600 : INFO : PROGRESS: at sentence #90000, processed 373464 words and 144461 word types
+2017-05-25 10:51:18,643 : INFO : PROGRESS: at sentence #100000, processed 415207 words and 155902 word types
+2017-05-25 10:51:18,687 : INFO : PROGRESS: at sentence #110000, processed 456501 words and 167051 word types
+2017-05-25 10:51:18,744 : INFO : PROGRESS: at sentence #120000, processed 497635 words and 177815 word types
+2017-05-25 10:51:18,788 : INFO : PROGRESS: at sentence #130000, processed 537528 words and 188216 word types
+2017-05-25 10:51:19,317 : INFO : PROGRESS: at sentence #140000, processed 577448 words and 198186 word types
+2017-05-25 10:51:19,361 : INFO : PROGRESS: at sentence #150000, processed 618509 words and 207940 word types
+2017-05-25 10:51:19,402 : INFO : PROGRESS: at sentence #160000, processed 658266 words and 215957 word types
+2017-05-25 10:51:19,435 : INFO : PROGRESS: at sentence #170000, processed 699031 words and 217488 word types
+2017-05-25 10:51:19,469 : INFO : PROGRESS: at sentence #180000, processed 740844 words and 219043 word types
+2017-05-25 10:51:19,504 : INFO : PROGRESS: at sentence #190000, processed 783422 words and 220469 word types
+2017-05-25 10:51:19,539 : INFO : PROGRESS: at sentence #200000, processed 824476 words and 221854 word types
+2017-05-25 10:51:19,577 : INFO : PROGRESS: at sentence #210000, processed 865255 words and 223188 word types
+2017-05-25 10:51:19,603 : INFO : PROGRESS: at sentence #220000, processed 906399 words and 224570 word types
+2017-05-25 10:51:19,666 : INFO : PROGRESS: at sentence #230000, processed 948124 words and 225794 word types
+2017-05-25 10:51:19,730 : INFO : PROGRESS: at sentence #240000, processed 989220 words and 227042 word types
+2017-05-25 10:51:19,762 : INFO : PROGRESS: at sentence #250000, processed 1031286 words and 228248 word types
+2017-05-25 10:51:19,795 : INFO : PROGRESS: at sentence #260000, processed 1071582 words and 229541 word types
+2017-05-25 10:51:19,846 : INFO : PROGRESS: at sentence #270000, processed 1113014 words and 230733 word types
+2017-05-25 10:51:19,905 : INFO : PROGRESS: at sentence #280000, processed 1154269 words and 231865 word types
+2017-05-25 10:51:19,978 : INFO : PROGRESS: at sentence #290000, processed 1194498 words and 233007 word types
+2017-05-25 10:51:20,009 : INFO : PROGRESS: at sentence #300000, processed 1235316 words and 234155 word types
+2017-05-25 10:51:20,042 : INFO : PROGRESS: at sentence #310000, processed 1277977 words and 235278 word types
+2017-05-25 10:51:20,075 : INFO : PROGRESS: at sentence #320000, processed 1319308 words and 236302 word types
+2017-05-25 10:51:20,106 : INFO : PROGRESS: at sentence #330000, processed 1359768 words and 237198 word types
+2017-05-25 10:51:20,137 : INFO : PROGRESS: at sentence #340000, processed 1399488 words and 238015 word types
+2017-05-25 10:51:20,169 : INFO : PROGRESS: at sentence #350000, processed 1440091 words and 238881 word types
+2017-05-25 10:51:20,201 : INFO : PROGRESS: at sentence #360000, processed 1481036 words and 239681 word types
+2017-05-25 10:51:20,232 : INFO : PROGRESS: at sentence #370000, processed 1521541 words and 240494 word types
+2017-05-25 10:51:20,277 : INFO : PROGRESS: at sentence #380000, processed 1564040 words and 241336 word types
+2017-05-25 10:51:20,315 : INFO : PROGRESS: at sentence #390000, processed 1606333 words and 242129 word types
+2017-05-25 10:51:20,369 : INFO : PROGRESS: at sentence #400000, processed 1647994 words and 242951 word types
+2017-05-25 10:51:20,423 : INFO : PROGRESS: at sentence #410000, processed 1689948 words and 243732 word types
+2017-05-25 10:51:20,536 : INFO : PROGRESS: at sentence #420000, processed 1731218 words and 244537 word types
+2017-05-25 10:51:20,580 : INFO : PROGRESS: at sentence #430000, processed 1772584 words and 245304 word types
+2017-05-25 10:51:20,612 : INFO : PROGRESS: at sentence #440000, processed 1814455 words and 246063 word types
+2017-05-25 10:51:20,645 : INFO : PROGRESS: at sentence #450000, processed 1855880 words and 246870 word types
+2017-05-25 10:51:20,681 : INFO : PROGRESS: at sentence #460000, processed 1898827 words and 247576 word types
+2017-05-25 10:51:20,739 : INFO : PROGRESS: at sentence #470000, processed 1940785 words and 248292 word types
+2017-05-25 10:51:20,791 : INFO : PROGRESS: at sentence #480000, processed 1981616 words and 248944 word types
+2017-05-25 10:51:20,913 : INFO : PROGRESS: at sentence #490000, processed 2022197 words and 249529 word types
+2017-05-25 10:51:20,950 : INFO : PROGRESS: at sentence #500000, processed 2064703 words and 250145 word types
+2017-05-25 10:51:20,981 : INFO : PROGRESS: at sentence #510000, processed 2105807 words and 250754 word types
+2017-05-25 10:51:21,029 : INFO : PROGRESS: at sentence #520000, processed 2148507 words and 251321 word types
+2017-05-25 10:51:21,061 : INFO : PROGRESS: at sentence #530000, processed 2190766 words and 251866 word types
+2017-05-25 10:51:21,096 : INFO : PROGRESS: at sentence #540000, processed 2232623 words and 252480 word types
+2017-05-25 10:51:21,127 : INFO : PROGRESS: at sentence #550000, processed 2273489 words and 253006 word types
+2017-05-25 10:51:21,157 : INFO : PROGRESS: at sentence #560000, processed 2313414 words and 253572 word types
+2017-05-25 10:51:21,188 : INFO : PROGRESS: at sentence #570000, processed 2354788 words and 254160 word types
+2017-05-25 10:51:21,230 : INFO : PROGRESS: at sentence #580000, processed 2395713 words and 254663 word types
+2017-05-25 10:51:21,288 : INFO : PROGRESS: at sentence #590000, processed 2436736 words and 255194 word types
+2017-05-25 10:51:21,330 : INFO : PROGRESS: at sentence #600000, processed 2477438 words and 255751 word types
+2017-05-25 10:51:21,376 : INFO : PROGRESS: at sentence #610000, processed 2519766 words and 256272 word types
+2017-05-25 10:51:21,408 : INFO : PROGRESS: at sentence #620000, processed 2559450 words and 256807 word types
+2017-05-25 10:51:21,436 : INFO : PROGRESS: at sentence #630000, processed 2600273 words and 257359 word types
+2017-05-25 10:51:21,466 : INFO : PROGRESS: at sentence #640000, processed 2641927 words and 257816 word types
+2017-05-25 10:51:21,526 : INFO : PROGRESS: at sentence #650000, processed 2683836 words and 258244 word types
+2017-05-25 10:51:21,603 : INFO : PROGRESS: at sentence #660000, processed 2727229 words and 258673 word types
+2017-05-25 10:51:21,642 : INFO : PROGRESS: at sentence #670000, processed 2768879 words and 259077 word types
+2017-05-25 10:51:21,689 : INFO : PROGRESS: at sentence #680000, processed 2810025 words and 259547 word types
+2017-05-25 10:51:21,722 : INFO : PROGRESS: at sentence #690000, processed 2851597 words and 259980 word types
+2017-05-25 10:51:21,781 : INFO : PROGRESS: at sentence #700000, processed 2891951 words and 260427 word types
+2017-05-25 10:51:21,843 : INFO : PROGRESS: at sentence #710000, processed 2932847 words and 260879 word types
+2017-05-25 10:51:21,911 : INFO : PROGRESS: at sentence #720000, processed 2972728 words and 261283 word types
+2017-05-25 10:51:21,942 : INFO : PROGRESS: at sentence #730000, processed 3013002 words and 261728 word types
+2017-05-25 10:51:21,973 : INFO : PROGRESS: at sentence #740000, processed 3054108 words and 262113 word types
+2017-05-25 10:51:22,005 : INFO : PROGRESS: at sentence #750000, processed 3094806 words and 262529 word types
+2017-05-25 10:51:22,052 : INFO : PROGRESS: at sentence #760000, processed 3137370 words and 262919 word types
+2017-05-25 10:51:22,086 : INFO : PROGRESS: at sentence #770000, processed 3178182 words and 263323 word types
+2017-05-25 10:51:22,133 : INFO : PROGRESS: at sentence #780000, processed 3218364 words and 263723 word types
+2017-05-25 10:51:22,168 : INFO : PROGRESS: at sentence #790000, processed 3260450 words and 264119 word types
+2017-05-25 10:51:22,219 : INFO : PROGRESS: at sentence #800000, processed 3301817 words and 264436 word types
+2017-05-25 10:51:22,284 : INFO : PROGRESS: at sentence #810000, processed 3343742 words and 264779 word types
+2017-05-25 10:51:22,315 : INFO : PROGRESS: at sentence #820000, processed 3384622 words and 265126 word types
+2017-05-25 10:51:22,370 : INFO : PROGRESS: at sentence #830000, processed 3425681 words and 265478 word types
+2017-05-25 10:51:22,435 : INFO : PROGRESS: at sentence #840000, processed 3467057 words and 265854 word types
+2017-05-25 10:51:22,468 : INFO : PROGRESS: at sentence #850000, processed 3507813 words and 266224 word types
+2017-05-25 10:51:22,502 : INFO : PROGRESS: at sentence #860000, processed 3550132 words and 266559 word types
+2017-05-25 10:51:22,533 : INFO : PROGRESS: at sentence #870000, processed 3592196 words and 266875 word types
+2017-05-25 10:51:22,564 : INFO : PROGRESS: at sentence #880000, processed 3633070 words and 267205 word types
+2017-05-25 10:51:22,596 : INFO : PROGRESS: at sentence #890000, processed 3673964 words and 267514 word types
+2017-05-25 10:51:22,626 : INFO : PROGRESS: at sentence #900000, processed 3714947 words and 267859 word types
+2017-05-25 10:51:22,664 : INFO : PROGRESS: at sentence #910000, processed 3755054 words and 268166 word types
+2017-05-25 10:51:22,698 : INFO : PROGRESS: at sentence #920000, processed 3796263 words and 268475 word types
+2017-05-25 10:51:22,731 : INFO : PROGRESS: at sentence #930000, processed 3837067 words and 268816 word types
+2017-05-25 10:51:22,762 : INFO : PROGRESS: at sentence #940000, processed 3878080 words and 269140 word types
+2017-05-25 10:51:22,794 : INFO : PROGRESS: at sentence #950000, processed 3918982 words and 269452 word types
+2017-05-25 10:51:22,827 : INFO : PROGRESS: at sentence #960000, processed 3958880 words and 269715 word types
+2017-05-25 10:51:22,861 : INFO : PROGRESS: at sentence #970000, processed 4000215 words and 270000 word types
+2017-05-25 10:51:22,894 : INFO : PROGRESS: at sentence #980000, processed 4040954 words and 270284 word types
+2017-05-25 10:51:22,950 : INFO : PROGRESS: at sentence #990000, processed 4080609 words and 270551 word types
+2017-05-25 10:51:22,982 : INFO : PROGRESS: at sentence #1000000, processed 4122290 words and 270830 word types
+2017-05-25 10:51:23,015 : INFO : PROGRESS: at sentence #1010000, processed 4164728 words and 271108 word types
+2017-05-25 10:51:23,048 : INFO : PROGRESS: at sentence #1020000, processed 4206640 words and 271322 word types
+2017-05-25 10:51:23,080 : INFO : PROGRESS: at sentence #1030000, processed 4247564 words and 271609 word types
+2017-05-25 10:51:23,111 : INFO : PROGRESS: at sentence #1040000, processed 4289160 words and 271869 word types
+2017-05-25 10:51:23,143 : INFO : PROGRESS: at sentence #1050000, processed 4330005 words and 272107 word types
+2017-05-25 10:51:23,174 : INFO : PROGRESS: at sentence #1060000, processed 4370160 words and 272357 word types
+2017-05-25 10:51:23,207 : INFO : PROGRESS: at sentence #1070000, processed 4411211 words and 272605 word types
+2017-05-25 10:51:23,238 : INFO : PROGRESS: at sentence #1080000, processed 4452140 words and 272874 word types
+2017-05-25 10:51:23,269 : INFO : PROGRESS: at sentence #1090000, processed 4493689 words and 273114 word types
+2017-05-25 10:51:23,310 : INFO : PROGRESS: at sentence #1100000, processed 4536370 words and 273362 word types
+2017-05-25 10:51:23,365 : INFO : PROGRESS: at sentence #1110000, processed 4578294 words and 273607 word types
+2017-05-25 10:51:23,423 : INFO : PROGRESS: at sentence #1120000, processed 4619993 words and 273801 word types
+2017-05-25 10:51:23,456 : INFO : PROGRESS: at sentence #1130000, processed 4660891 words and 274043 word types
+2017-05-25 10:51:23,489 : INFO : PROGRESS: at sentence #1140000, processed 4701772 words and 274281 word types
+2017-05-25 10:51:23,519 : INFO : PROGRESS: at sentence #1150000, processed 4744215 words and 274509 word types
+2017-05-25 10:51:23,550 : INFO : PROGRESS: at sentence #1160000, processed 4785325 words and 274730 word types
+2017-05-25 10:51:23,580 : INFO : PROGRESS: at sentence #1170000, processed 4825561 words and 274931 word types
+2017-05-25 10:51:23,612 : INFO : PROGRESS: at sentence #1180000, processed 4866192 words and 275134 word types
+2017-05-25 10:51:23,642 : INFO : PROGRESS: at sentence #1190000, processed 4908382 words and 275334 word types
+2017-05-25 10:51:23,672 : INFO : PROGRESS: at sentence #1200000, processed 4948628 words and 275538 word types
+2017-05-25 10:51:23,703 : INFO : PROGRESS: at sentence #1210000, processed 4990217 words and 275746 word types
+2017-05-25 10:51:23,735 : INFO : PROGRESS: at sentence #1220000, processed 5032766 words and 275951 word types
+2017-05-25 10:51:23,766 : INFO : PROGRESS: at sentence #1230000, processed 5075855 words and 276175 word types
+2017-05-25 10:51:23,798 : INFO : PROGRESS: at sentence #1240000, processed 5117418 words and 276388 word types
+2017-05-25 10:51:23,828 : INFO : PROGRESS: at sentence #1250000, processed 5158050 words and 276607 word types
+2017-05-25 10:51:23,859 : INFO : PROGRESS: at sentence #1260000, processed 5198649 words and 276808 word types
+2017-05-25 10:51:23,891 : INFO : PROGRESS: at sentence #1270000, processed 5240851 words and 277012 word types
+2017-05-25 10:51:23,935 : INFO : PROGRESS: at sentence #1280000, processed 5282495 words and 277189 word types
+2017-05-25 10:51:23,967 : INFO : PROGRESS: at sentence #1290000, processed 5323574 words and 277371 word types
+2017-05-25 10:51:23,999 : INFO : PROGRESS: at sentence #1300000, processed 5364561 words and 277546 word types
+2017-05-25 10:51:24,029 : INFO : PROGRESS: at sentence #1310000, processed 5406214 words and 277736 word types
+2017-05-25 10:51:24,059 : INFO : PROGRESS: at sentence #1320000, processed 5447134 words and 277941 word types
+2017-05-25 10:51:24,101 : INFO : PROGRESS: at sentence #1330000, processed 5488426 words and 278105 word types
+2017-05-25 10:51:24,144 : INFO : PROGRESS: at sentence #1340000, processed 5529648 words and 278298 word types
+2017-05-25 10:51:24,182 : INFO : PROGRESS: at sentence #1350000, processed 5569888 words and 278480 word types
+2017-05-25 10:51:24,213 : INFO : PROGRESS: at sentence #1360000, processed 5611059 words and 278676 word types
+2017-05-25 10:51:24,243 : INFO : PROGRESS: at sentence #1370000, processed 5651677 words and 278849 word types
+2017-05-25 10:51:24,272 : INFO : PROGRESS: at sentence #1380000, processed 5692254 words and 279033 word types
+2017-05-25 10:51:24,304 : INFO : PROGRESS: at sentence #1390000, processed 5733906 words and 279206 word types
+2017-05-25 10:51:24,336 : INFO : PROGRESS: at sentence #1400000, processed 5777317 words and 279370 word types
+2017-05-25 10:51:24,367 : INFO : PROGRESS: at sentence #1410000, processed 5818896 words and 279551 word types
+2017-05-25 10:51:24,407 : INFO : PROGRESS: at sentence #1420000, processed 5860398 words and 279723 word types
+2017-05-25 10:51:24,438 : INFO : PROGRESS: at sentence #1430000, processed 5901597 words and 279894 word types
+2017-05-25 10:51:24,486 : INFO : PROGRESS: at sentence #1440000, processed 5942592 words and 280042 word types
+2017-05-25 10:51:24,519 : INFO : PROGRESS: at sentence #1450000, processed 5982879 words and 280204 word types
+2017-05-25 10:51:24,554 : INFO : PROGRESS: at sentence #1460000, processed 6024514 words and 280337 word types
+2017-05-25 10:51:24,579 : INFO : PROGRESS: at sentence #1470000, processed 6065128 words and 280504 word types
+2017-05-25 10:51:24,625 : INFO : PROGRESS: at sentence #1480000, processed 6105515 words and 280682 word types
+2017-05-25 10:51:24,668 : INFO : PROGRESS: at sentence #1490000, processed 6146562 words and 280827 word types
+2017-05-25 10:51:24,727 : INFO : PROGRESS: at sentence #1500000, processed 6187798 words and 280999 word types
+2017-05-25 10:51:24,789 : INFO : PROGRESS: at sentence #1510000, processed 6229664 words and 281160 word types
+2017-05-25 10:51:24,834 : INFO : PROGRESS: at sentence #1520000, processed 6273044 words and 281282 word types
+2017-05-25 10:51:24,877 : INFO : PROGRESS: at sentence #1530000, processed 6314338 words and 281433 word types
+2017-05-25 10:51:24,911 : INFO : PROGRESS: at sentence #1540000, processed 6354975 words and 281594 word types
+2017-05-25 10:51:24,943 : INFO : PROGRESS: at sentence #1550000, processed 6394870 words and 281743 word types
+2017-05-25 10:51:24,972 : INFO : PROGRESS: at sentence #1560000, processed 6436208 words and 281921 word types
+2017-05-25 10:51:25,001 : INFO : PROGRESS: at sentence #1570000, processed 6477121 words and 282068 word types
+2017-05-25 10:51:25,033 : INFO : PROGRESS: at sentence #1580000, processed 6519503 words and 282210 word types
+2017-05-25 10:51:25,035 : INFO : collected 282216 word types from a corpus of 6522099 words and 1580540 sentences
+2017-05-25 10:51:25,531 : INFO : total 282216 word types after removing those with count<0
+2017-05-25 10:51:25,531 : INFO : constructing a huffman tree from 282216 words
+2017-05-25 10:51:43,947 : INFO : built huffman tree with maximum node depth 23
+2017-05-25 10:51:44,429 : INFO : resetting layer weights
+2017-05-25 10:51:49,193 : INFO : training model with 40 workers on 282216 vocabulary and 128 features, using 'skipgram'=1 'hierarchical softmax'=1 'subsample'=0 and 'negative sampling'=0
+2017-05-25 10:51:50,196 : INFO : PROGRESS: at 0.43% words, alpha 0.02498, 27630 words/s
+2017-05-25 10:51:51,198 : INFO : PROGRESS: at 1.26% words, alpha 0.02473, 41002 words/s
+2017-05-25 10:51:52,202 : INFO : PROGRESS: at 2.10% words, alpha 0.02467, 45441 words/s
+2017-05-25 10:51:53,207 : INFO : PROGRESS: at 2.92% words, alpha 0.02430, 47510 words/s
+2017-05-25 10:51:54,224 : INFO : PROGRESS: at 3.65% words, alpha 0.02420, 47299 words/s
+2017-05-25 10:51:55,227 : INFO : PROGRESS: at 4.46% words, alpha 0.02394, 48260 words/s
+2017-05-25 10:51:56,228 : INFO : PROGRESS: at 5.20% words, alpha 0.02381, 48198 words/s
+2017-05-25 10:51:57,249 : INFO : PROGRESS: at 5.94% words, alpha 0.02369, 48080 words/s
+2017-05-25 10:51:58,253 : INFO : PROGRESS: at 6.69% words, alpha 0.02344, 48138 words/s
+2017-05-25 10:51:59,256 : INFO : PROGRESS: at 7.37% words, alpha 0.02332, 47765 words/s
+2017-05-25 10:52:00,263 : INFO : PROGRESS: at 8.07% words, alpha 0.02299, 47529 words/s
+2017-05-25 10:52:01,280 : INFO : PROGRESS: at 8.90% words, alpha 0.02278, 48048 words/s
+2017-05-25 10:52:02,283 : INFO : PROGRESS: at 9.64% words, alpha 0.02265, 48014 words/s
+2017-05-25 10:52:03,290 : INFO : PROGRESS: at 10.36% words, alpha 0.02243, 47944 words/s
+2017-05-25 10:52:04,291 : INFO : PROGRESS: at 11.10% words, alpha 0.02230, 47949 words/s
+2017-05-25 10:52:05,291 : INFO : PROGRESS: at 11.81% words, alpha 0.02206, 47867 words/s
+2017-05-25 10:52:06,299 : INFO : PROGRESS: at 12.38% words, alpha 0.02192, 47209 words/s
+2017-05-25 10:52:07,307 : INFO : PROGRESS: at 12.99% words, alpha 0.02177, 46763 words/s
+2017-05-25 10:52:08,314 : INFO : PROGRESS: at 13.62% words, alpha 0.02169, 46456 words/s
+2017-05-25 10:52:09,318 : INFO : PROGRESS: at 14.37% words, alpha 0.02158, 46555 words/s
+2017-05-25 10:52:10,326 : INFO : PROGRESS: at 15.05% words, alpha 0.02130, 46436 words/s
+2017-05-25 10:52:11,328 : INFO : PROGRESS: at 15.92% words, alpha 0.02108, 46922 words/s
+2017-05-25 10:52:12,334 : INFO : PROGRESS: at 16.68% words, alpha 0.02089, 47021 words/s
+2017-05-25 10:52:13,341 : INFO : PROGRESS: at 17.42% words, alpha 0.02067, 47043 words/s
+2017-05-25 10:52:14,357 : INFO : PROGRESS: at 18.10% words, alpha 0.02049, 46916 words/s
+2017-05-25 10:52:15,361 : INFO : PROGRESS: at 18.92% words, alpha 0.02038, 47164 words/s
+2017-05-25 10:52:16,366 : INFO : PROGRESS: at 19.78% words, alpha 0.02015, 47479 words/s
+2017-05-25 10:52:17,368 : INFO : PROGRESS: at 20.53% words, alpha 0.01993, 47521 words/s
+2017-05-25 10:52:18,380 : INFO : PROGRESS: at 21.42% words, alpha 0.01969, 47871 words/s
+2017-05-25 10:52:19,385 : INFO : PROGRESS: at 22.27% words, alpha 0.01962, 48101 words/s
+2017-05-25 10:52:20,385 : INFO : PROGRESS: at 22.99% words, alpha 0.01927, 48078 words/s
+2017-05-25 10:52:21,385 : INFO : PROGRESS: at 23.57% words, alpha 0.01918, 47758 words/s
+2017-05-25 10:52:22,395 : INFO : PROGRESS: at 24.13% words, alpha 0.01899, 47404 words/s
+2017-05-25 10:52:23,407 : INFO : PROGRESS: at 24.75% words, alpha 0.01886, 47185 words/s
+2017-05-25 10:52:24,410 : INFO : PROGRESS: at 25.46% words, alpha 0.01885, 47160 words/s
+2017-05-25 10:52:25,416 : INFO : PROGRESS: at 26.19% words, alpha 0.01858, 47149 words/s
+2017-05-25 10:52:26,421 : INFO : PROGRESS: at 26.85% words, alpha 0.01843, 47043 words/s
+2017-05-25 10:52:27,439 : INFO : PROGRESS: at 27.60% words, alpha 0.01817, 47068 words/s
+2017-05-25 10:52:28,440 : INFO : PROGRESS: at 28.29% words, alpha 0.01797, 47010 words/s
+2017-05-25 10:52:29,443 : INFO : PROGRESS: at 29.08% words, alpha 0.01773, 47114 words/s
+2017-05-25 10:52:30,448 : INFO : PROGRESS: at 29.75% words, alpha 0.01779, 47030 words/s
+2017-05-25 10:52:31,457 : INFO : PROGRESS: at 30.37% words, alpha 0.01749, 46867 words/s
+2017-05-25 10:52:32,479 : INFO : PROGRESS: at 31.10% words, alpha 0.01728, 46853 words/s
+2017-05-25 10:52:33,495 : INFO : PROGRESS: at 31.84% words, alpha 0.01704, 46874 words/s
+2017-05-25 10:52:34,495 : INFO : PROGRESS: at 32.58% words, alpha 0.01701, 46909 words/s
+2017-05-25 10:52:35,503 : INFO : PROGRESS: at 33.37% words, alpha 0.01667, 46993 words/s
+2017-05-25 10:52:36,505 : INFO : PROGRESS: at 34.13% words, alpha 0.01660, 47046 words/s
+2017-05-25 10:52:37,517 : INFO : PROGRESS: at 34.73% words, alpha 0.01639, 46876 words/s
+2017-05-25 10:52:38,523 : INFO : PROGRESS: at 35.37% words, alpha 0.01628, 46764 words/s
+2017-05-25 10:52:39,556 : INFO : PROGRESS: at 36.09% words, alpha 0.01609, 46741 words/s
+2017-05-25 10:52:40,558 : INFO : PROGRESS: at 36.98% words, alpha 0.01583, 46958 words/s
+2017-05-25 10:52:41,558 : INFO : PROGRESS: at 37.84% words, alpha 0.01554, 47129 words/s
+2017-05-25 10:52:42,565 : INFO : PROGRESS: at 38.69% words, alpha 0.01543, 47274 words/s
+2017-05-25 10:52:43,567 : INFO : PROGRESS: at 39.49% words, alpha 0.01516, 47367 words/s
+2017-05-25 10:52:44,587 : INFO : PROGRESS: at 40.16% words, alpha 0.01503, 47280 words/s
+2017-05-25 10:52:45,588 : INFO : PROGRESS: at 40.83% words, alpha 0.01495, 47220 words/s
+2017-05-25 10:52:46,592 : INFO : PROGRESS: at 41.50% words, alpha 0.01472, 47160 words/s
+2017-05-25 10:52:47,598 : INFO : PROGRESS: at 42.27% words, alpha 0.01449, 47206 words/s
+2017-05-25 10:52:48,613 : INFO : PROGRESS: at 43.14% words, alpha 0.01433, 47353 words/s
+2017-05-25 10:52:49,624 : INFO : PROGRESS: at 43.96% words, alpha 0.01402, 47440 words/s
+2017-05-25 10:52:50,626 : INFO : PROGRESS: at 44.80% words, alpha 0.01384, 47564 words/s
+2017-05-25 10:52:51,630 : INFO : PROGRESS: at 45.59% words, alpha 0.01364, 47620 words/s
+2017-05-25 10:52:52,640 : INFO : PROGRESS: at 46.46% words, alpha 0.01342, 47761 words/s
+2017-05-25 10:52:53,640 : INFO : PROGRESS: at 47.25% words, alpha 0.01327, 47819 words/s
+2017-05-25 10:52:54,659 : INFO : PROGRESS: at 48.10% words, alpha 0.01308, 47924 words/s
+2017-05-25 10:52:55,661 : INFO : PROGRESS: at 49.01% words, alpha 0.01280, 48086 words/s
+2017-05-25 10:52:56,666 : INFO : PROGRESS: at 50.04% words, alpha 0.01264, 48372 words/s
+2017-05-25 10:52:57,675 : INFO : PROGRESS: at 51.14% words, alpha 0.01225, 48701 words/s
+2017-05-25 10:52:58,676 : INFO : PROGRESS: at 52.01% words, alpha 0.01208, 48817 words/s
+2017-05-25 10:52:59,682 : INFO : PROGRESS: at 52.86% words, alpha 0.01180, 48911 words/s
+2017-05-25 10:53:00,685 : INFO : PROGRESS: at 53.70% words, alpha 0.01169, 48986 words/s
+2017-05-25 10:53:01,699 : INFO : PROGRESS: at 54.64% words, alpha 0.01137, 49153 words/s
+2017-05-25 10:53:02,705 : INFO : PROGRESS: at 55.53% words, alpha 0.01116, 49263 words/s
+2017-05-25 10:53:03,711 : INFO : PROGRESS: at 56.33% words, alpha 0.01092, 49301 words/s
+2017-05-25 10:53:04,716 : INFO : PROGRESS: at 57.24% words, alpha 0.01079, 49436 words/s
+2017-05-25 10:53:05,716 : INFO : PROGRESS: at 57.98% words, alpha 0.01060, 49413 words/s
+2017-05-25 10:53:06,718 : INFO : PROGRESS: at 58.82% words, alpha 0.01033, 49487 words/s
+2017-05-25 10:53:07,720 : INFO : PROGRESS: at 59.72% words, alpha 0.01007, 49600 words/s
+2017-05-25 10:53:08,721 : INFO : PROGRESS: at 60.67% words, alpha 0.00987, 49753 words/s
+2017-05-25 10:53:09,725 : INFO : PROGRESS: at 61.56% words, alpha 0.00968, 49858 words/s
+2017-05-25 10:53:10,727 : INFO : PROGRESS: at 62.40% words, alpha 0.00943, 49913 words/s
+2017-05-25 10:53:11,731 : INFO : PROGRESS: at 63.15% words, alpha 0.00923, 49899 words/s
+2017-05-25 10:53:12,735 : INFO : PROGRESS: at 63.86% words, alpha 0.00906, 49852 words/s
+2017-05-25 10:53:13,741 : INFO : PROGRESS: at 64.66% words, alpha 0.00890, 49880 words/s
+2017-05-25 10:53:14,743 : INFO : PROGRESS: at 65.53% words, alpha 0.00866, 49955 words/s
+2017-05-25 10:53:15,749 : INFO : PROGRESS: at 66.27% words, alpha 0.00845, 49931 words/s
+2017-05-25 10:53:16,753 : INFO : PROGRESS: at 67.12% words, alpha 0.00826, 49996 words/s
+2017-05-25 10:53:17,756 : INFO : PROGRESS: at 68.05% words, alpha 0.00804, 50111 words/s
+2017-05-25 10:53:18,758 : INFO : PROGRESS: at 68.98% words, alpha 0.00776, 50233 words/s
+2017-05-25 10:53:19,758 : INFO : PROGRESS: at 69.82% words, alpha 0.00760, 50283 words/s
+2017-05-25 10:53:20,759 : INFO : PROGRESS: at 70.74% words, alpha 0.00735, 50384 words/s
+2017-05-25 10:53:21,767 : INFO : PROGRESS: at 71.54% words, alpha 0.00713, 50404 words/s
+2017-05-25 10:53:22,773 : INFO : PROGRESS: at 72.41% words, alpha 0.00699, 50467 words/s
+2017-05-25 10:53:23,773 : INFO : PROGRESS: at 73.25% words, alpha 0.00684, 50510 words/s
+2017-05-25 10:53:24,781 : INFO : PROGRESS: at 74.20% words, alpha 0.00651, 50628 words/s
+2017-05-25 10:53:25,783 : INFO : PROGRESS: at 75.16% words, alpha 0.00621, 50752 words/s
+2017-05-25 10:53:26,795 : INFO : PROGRESS: at 76.07% words, alpha 0.00607, 50833 words/s
+2017-05-25 10:53:27,802 : INFO : PROGRESS: at 76.84% words, alpha 0.00582, 50820 words/s
+2017-05-25 10:53:28,804 : INFO : PROGRESS: at 77.71% words, alpha 0.00573, 50882 words/s
+2017-05-25 10:53:29,812 : INFO : PROGRESS: at 78.64% words, alpha 0.00544, 50972 words/s
+2017-05-25 10:53:30,813 : INFO : PROGRESS: at 79.49% words, alpha 0.00518, 51016 words/s
+2017-05-25 10:53:31,816 : INFO : PROGRESS: at 80.27% words, alpha 0.00496, 51015 words/s
+2017-05-25 10:53:32,822 : INFO : PROGRESS: at 81.17% words, alpha 0.00478, 51086 words/s
+2017-05-25 10:53:33,824 : INFO : PROGRESS: at 82.05% words, alpha 0.00457, 51146 words/s
+2017-05-25 10:53:34,825 : INFO : PROGRESS: at 82.94% words, alpha 0.00435, 51209 words/s
+2017-05-25 10:53:35,826 : INFO : PROGRESS: at 83.86% words, alpha 0.00404, 51292 words/s
+2017-05-25 10:53:36,827 : INFO : PROGRESS: at 84.73% words, alpha 0.00383, 51344 words/s
+2017-05-25 10:53:37,829 : INFO : PROGRESS: at 85.50% words, alpha 0.00370, 51330 words/s
+2017-05-25 10:53:38,831 : INFO : PROGRESS: at 86.47% words, alpha 0.00351, 51441 words/s
+2017-05-25 10:53:39,834 : INFO : PROGRESS: at 87.34% words, alpha 0.00317, 51485 words/s
+2017-05-25 10:53:40,835 : INFO : PROGRESS: at 88.31% words, alpha 0.00294, 51589 words/s
+2017-05-25 10:53:41,841 : INFO : PROGRESS: at 89.27% words, alpha 0.00270, 51683 words/s
+2017-05-25 10:53:42,851 : INFO : PROGRESS: at 90.04% words, alpha 0.00258, 51666 words/s
+2017-05-25 10:53:43,853 : INFO : PROGRESS: at 90.83% words, alpha 0.00234, 51667 words/s
+2017-05-25 10:53:44,860 : INFO : PROGRESS: at 91.62% words, alpha 0.00219, 51663 words/s
+2017-05-25 10:53:45,871 : INFO : PROGRESS: at 92.42% words, alpha 0.00191, 51664 words/s
+2017-05-25 10:53:46,874 : INFO : PROGRESS: at 93.19% words, alpha 0.00176, 51649 words/s
+2017-05-25 10:53:47,878 : INFO : PROGRESS: at 93.93% words, alpha 0.00152, 51617 words/s
+2017-05-25 10:53:48,878 : INFO : PROGRESS: at 94.79% words, alpha 0.00146, 51653 words/s
+2017-05-25 10:53:49,911 : INFO : PROGRESS: at 95.86% words, alpha 0.00108, 51792 words/s
+2017-05-25 10:53:50,911 : INFO : PROGRESS: at 96.70% words, alpha 0.00093, 51813 words/s
+2017-05-25 10:53:51,927 : INFO : PROGRESS: at 97.52% words, alpha 0.00065, 51820 words/s
+2017-05-25 10:53:52,951 : INFO : PROGRESS: at 98.45% words, alpha 0.00041, 51884 words/s
+2017-05-25 10:53:53,753 : INFO : reached the end of input; waiting to finish 80 outstanding jobs
+2017-05-25 10:53:53,954 : INFO : PROGRESS: at 99.44% words, alpha 0.00020, 51984 words/s
+2017-05-25 10:53:54,350 : INFO : training on 6522099 words took 125.2s, 52111 words/s
+2017-05-25 10:53:54,722 : INFO : storing 282216x128 projection weights into ../../graphs/embeddings/graph3_dw
+40
+Sender: LSF System <lsfadmin@irlbxph020.irl.in.ibm.com>
+Subject: Job 8112: <python deepwalk_modified.py ../../graphs/edgelist/graph5 ../../graphs/embeddings/graph5_dw> in cluster <cluster1> Exited
+
+Job <python deepwalk_modified.py ../../graphs/edgelist/graph5 ../../graphs/embeddings/graph5_dw> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <cluster1>.
+Job was executed on host(s) <irlbxph020.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <cluster1>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/embeddingmodel/deepwalk> was used as the working directory.
+Started at Thu May 25 12:07:02 2017
+Results reported on Thu May 25 12:07:10 2017
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python deepwalk_modified.py ../../graphs/edgelist/graph5 ../../graphs/embeddings/graph5_dw
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :               5.08 sec.
+    Max Memory :             119 MB
+    Average Memory :         17.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Processes :          3
+    Max Threads :            43
+
+The output (if any) follows:
+
+40
+Traceback (most recent call last):
+  File "deepwalk_modified.py", line 51, in <module>
+    main(model_params)
+  File "deepwalk_modified.py", line 45, in main
+    model = train(model_params)
+  File "deepwalk_modified.py", line 34, in train
+    sentences = getContext(model_params['graph_file'], model_params['num_walks'], model_params['walk_size'])
+  File "deepwalk_modified.py", line 28, in getContext
+    graph = gw.load_edgelist(graph_file, False)
+  File "/home/ayushidalmia/interpretNode/embeddingmodel/deepwalk/getWalks.py", line 253, in load_edgelist
+    G[x].append(y)
+KeyboardInterrupt
