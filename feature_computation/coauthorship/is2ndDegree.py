@@ -78,7 +78,7 @@ def process_paper(content):
         test_auth_2_auth[id2][id1] = 1    
 
 # parse the file
-f = open('../CS_Citation_Network', 'r')
+f = open('/home/ayushidalmia/interpretNode/graphs/dataset/CS_Citation_Network', 'r')
 paper_content=[]
 for line in f:
   line = line.strip()
@@ -122,12 +122,12 @@ def write_set(file, mp):
         w.write(str(p1)+"\t"+str(p2)+"\t0\n")
         break
   w.close()
-
+baseDir = "/home/ayushidalmia/interpretNode/graphs/features/graph1/"
 print('train set...')
-write_set('is2ndDegree_train', train_auth_2_auth)
+write_set(baseDir+'is2ndDegree_train', train_auth_2_auth)
 
 print('dev set...')
-write_set('is2ndDegree_dev', dev_auth_2_auth)
+write_set(baseDir+'is2ndDegree_dev', dev_auth_2_auth)
 
 print('test set...')
-write_set('is2ndDegree_test', test_auth_2_auth)
+write_set(baseDir+'is2ndDegree_test', test_auth_2_auth)

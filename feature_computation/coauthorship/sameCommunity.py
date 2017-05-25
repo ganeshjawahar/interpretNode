@@ -55,7 +55,7 @@ def process_paper(content):
   
 
 # parse the file
-f = open('../CS_Citation_Network', 'r')
+f = open('/home/ayushidalmia/interpretNode/graphs/dataset/CS_Citation_Network', 'r')
 paper_content=[]
 for line in f:
   line = line.strip()
@@ -104,7 +104,7 @@ def write_file(file, start, end):
         w.write(str(r_p1)+"\t"+str(r_p2)+"\t0\n")
         break
   w.close()
-
-write_file('sameCommunity_train', 0, train_size-1)
-write_file('sameCommunity_dev', train_size, train_size+dev_size-1)
-write_file('sameCommunity_test', train_size+dev_size, train_size+dev_size+test_size-1)
+baseDir = "/home/ayushidalmia/interpretNode/graphs/features/graph1/"
+write_file(baseDir+'sameCommunity_train', 0, train_size-1)
+write_file(baseDir+'sameCommunity_dev', train_size, train_size+dev_size-1)
+write_file(baseDir+'sameCommunity_test', train_size+dev_size, train_size+dev_size+test_size-1)

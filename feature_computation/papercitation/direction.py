@@ -41,7 +41,7 @@ def process_paper(content):
         test_edges.append([paperid, cite])
 
 # parse the file
-f = open('../CS_Citation_Network', 'r')
+f = open('/home/ayushidalmia/interpretNode/graphs/dataset/CS_Citation_Network', 'r')
 paper_content=[]
 for line in f:
   line = line.strip()
@@ -60,12 +60,13 @@ def write_set(file, edges):
     w.write(edge[1]+"\t"+edge[0]+"\t0\n")
   w.close()
 
+baseDir = "/home/ayushidalmia/interpretNode/graphs/features/graph3/"
 print('train set...')
-write_set('direction_train', train_edges)
+write_set(baseDir+'direction_train', train_edges)
 
 print('dev set...')
-write_set('direction_dev', dev_edges)
+write_set(baseDir+'direction_dev', dev_edges)
 
 print('test set...')
-write_set('direction_test', test_edges)
+write_set(baseDir+'direction_test', test_edges)
 

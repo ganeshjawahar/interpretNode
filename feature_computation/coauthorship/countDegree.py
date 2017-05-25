@@ -54,7 +54,7 @@ def process_paper(content):
       author_2_author[a2a[1]][a2a[0]] = author_2_author[a2a[1]][a2a[0]] + 1  
 
 # parse the file
-f = open('../CS_Citation_Network', 'r')
+f = open('/home/ayushidalmia/interpretNode/graphs/dataset/CS_Citation_Network', 'r')
 paper_content=[]
 for line in f:
   line = line.strip()
@@ -86,20 +86,21 @@ for a in auths:
   class_map[cl] = class_map[cl] + 1
 #print(mx)
 #print(class_map)
+baseDir = "/home/ayushidalmia/interpretNode/graphs/features/graph1/"
 
-w = open('countDegree_train', 'w')
+w = open(baseDir+'countDegree_train', 'w')
 for i in xrange(train_size):
   assert(authid_map[auths[i]]!=None)
   w.write(str(authid_map[auths[i]])+"\t"+str(getclass(len(author_2_author[auths[i]])))+"\n")
 w.close()
 
-w = open('countDegree_dev', 'w')
+w = open(baseDir+'countDegree_dev', 'w')
 for i in xrange(dev_size):
   assert(authid_map[auths[train_size+i]]!=None)
   w.write(str(authid_map[auths[train_size+i]])+"\t"+str(getclass(len(author_2_author[auths[train_size+i]])))+"\n")
 w.close()
 
-w = open('countDegree_test', 'w')
+w = open(baseDir+'countDegree_test', 'w')
 for i in xrange(test_size):
   assert(authid_map[auths[train_size+dev_size+i]]!=None)
   w.write(str(authid_map[auths[train_size++dev_size+i]])+"\t"+str(getclass(len(author_2_author[auths[train_size+dev_size+i]])))+"\n")

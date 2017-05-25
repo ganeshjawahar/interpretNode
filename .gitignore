@@ -1,2 +1,5 @@
+embeddingmodel/snap/examples/node2vec/core
 graphs/
+logs/
 *.egg
+*.pyc

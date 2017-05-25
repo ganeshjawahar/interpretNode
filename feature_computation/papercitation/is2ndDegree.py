@@ -46,7 +46,7 @@ def process_paper(content):
         test_paper_2_paper[paperid][cite]=1 
 
 # parse the file
-f = open('../CS_Citation_Network', 'r')
+f = open('/home/ayushidalmia/interpretNode/graphs/dataset/CS_Citation_Network', 'r')
 paper_content=[]
 for line in f:
   line = line.strip()
@@ -81,14 +81,15 @@ def write_set(file, mp):
         break
   w.close()
 
+baseDir = "/home/ayushidalmia/interpretNode/graphs/features/graph3/"
 print('train set...')
-write_set('is2ndDegree_train', train_paper_2_paper)
+write_set(baseDir+'is2ndDegree_train', train_paper_2_paper)
 
 print('dev set...')
-write_set('is2ndDegree_dev', dev_paper_2_paper)
+write_set(baseDir+'is2ndDegree_dev', dev_paper_2_paper)
 
 print('test set...')
-write_set('is2ndDegree_test', test_paper_2_paper)
+write_set(baseDir+'is2ndDegree_test', test_paper_2_paper)
 
 print(len(train_paper_2_paper ))
 print(len(dev_paper_2_paper))

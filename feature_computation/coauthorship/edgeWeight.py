@@ -54,7 +54,7 @@ def process_paper(content):
       author_2_author[a2a[1]][a2a[0]] = author_2_author[a2a[1]][a2a[0]] + 1  
 
 # parse the file
-f = open('../CS_Citation_Network', 'r')
+f = open('/home/ayushidalmia/interpretNode/graphs/dataset/CS_Citation_Network', 'r')
 paper_content=[]
 for line in f:
   line = line.strip()
@@ -77,9 +77,10 @@ for a in auths:
       mx=author_2_author[a][b]
 print(mx)
 
-w1 = open('edgeWeight_train', 'w')
-w2 = open('edgeWeight_dev', 'w')
-w3 = open('edgeWeight_test', 'w')
+baseDir = "/home/ayushidalmia/interpretNode/graphs/features/graph1/"
+w1 = open(baseDir+'edgeWeight_train', 'w')
+w2 = open(baseDir+'edgeWeight_dev', 'w')
+w3 = open(baseDir+'edgeWeight_test', 'w')
 class_map = {}
 for i in xrange(len(auths)):
   cur_auths = author_2_author[auths[i]].keys()

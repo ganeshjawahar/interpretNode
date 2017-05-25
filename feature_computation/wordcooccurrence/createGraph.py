@@ -1,6 +1,6 @@
 import scipy.io
 import numpy as np
-mat = scipy.io.loadmat('../POS.mat')
+mat = scipy.io.loadmat('/home/ayushidalmia/interpretNode/graphs/dataset/POS.mat')
 #print(mat)
 
 nodes={}

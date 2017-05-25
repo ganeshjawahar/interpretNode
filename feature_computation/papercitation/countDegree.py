@@ -35,7 +35,7 @@ def process_paper(content):
     paper_degree[paperid]=len(citations)
    
 # parse the file
-f = open('../CS_Citation_Network', 'r')
+f = open('/home/ayushidalmia/interpretNode/graphs/dataset/CS_Citation_Network', 'r')
 paper_content=[]
 for line in f:
   line = line.strip()
@@ -61,18 +61,18 @@ for p in papers:
   if paper_degree[p]>mx:
     mx=paper_degree[p]
 print(mx)
-
-w = open('countDegree_train', 'w')
+baseDir = "/home/ayushidalmia/interpretNode/graphs/features/graph3/"
+w = open(baseDir+'countDegree_train', 'w')
 for i in xrange(train_size):
   w.write(papers[i]+"\t"+str(getclass(paper_degree[papers[i]]))+"\n")
 w.close()
 
-w = open('countDegree_dev', 'w')
+w = open(baseDir+'countDegree_dev', 'w')
 for i in xrange(dev_size):
   w.write(papers[train_size+i]+"\t"+str(getclass(paper_degree[papers[train_size+i]]))+"\n")
 w.close()
 
-w = open('countDegree_test', 'w')
+w = open(baseDir+'countDegree_test', 'w')
 for i in xrange(test_size):
   w.write(papers[train_size+dev_size+i]+"\t"+str(getclass(paper_degree[papers[train_size+dev_size+i]]))+"\n")
 w.close()

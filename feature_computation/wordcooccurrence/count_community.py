@@ -3,7 +3,7 @@ import numpy as np
 import random
 import math
 random.seed(123)
-mat = scipy.io.loadmat('../POS.mat')
+mat = scipy.io.loadmat('/home/ayushidalmia/interpretNode/graphs/dataset/POS.mat')
 
 graph=mat['group']
 nodes_2_c={}
@@ -29,7 +29,7 @@ def write_to_file(file, start, end):
 tr=int(len(keys)*0.7)
 dev=int(len(keys)*0.1)
 test=len(keys)-tr-dev
-
-write_to_file('countCommunity_train', 0, tr-1)
-write_to_file('countCommunity_dev', tr, tr+dev-1)
-write_to_file('countCommunity_test', tr+dev, tr+dev+test-1)
+baseDir = "/home/ayushidalmia/interpretNode/graphs/features/graph4/"
+write_to_file(baseDir+'countCommunity_train', 0, tr-1)
+write_to_file(baseDir+'countCommunity_dev', tr, tr+dev-1)
+write_to_file(baseDir+'countCommunity_test', tr+dev, tr+dev+test-1)
