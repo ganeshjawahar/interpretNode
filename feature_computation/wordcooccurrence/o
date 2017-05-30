@@ -1,0 +1,246 @@
+Sender: LSF System <lsfadmin@irlbxph019.irl.in.ibm.com>
+Subject: Job 8804: <python count_community.py> in cluster <cluster1> Exited
+
+Job <python count_community.py> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <cluster1>.
+Job was executed on host(s) <irlbxph019.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <cluster1>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/feature_computation/wordcooccurrence> was used as the working directory.
+Started at Tue May 30 17:55:10 2017
+Results reported on Tue May 30 17:55:11 2017
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python count_community.py
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :               3.32 sec.
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+
+The output (if any) follows:
+
+Traceback (most recent call last):
+  File "count_community.py", line 45, in <module>
+    arr = run_to_file()
+  File "count_community.py", line 41, in run_to_file
+    node = keys[i]
+IndexError: list index out of range
+Sender: LSF System <lsfadmin@irlbxph019.irl.in.ibm.com>
+Subject: Job 8805: <python count_community.py> in cluster <cluster1> Exited
+
+Job <python count_community.py> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <cluster1>.
+Job was executed on host(s) <irlbxph019.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <cluster1>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/feature_computation/wordcooccurrence> was used as the working directory.
+Started at Tue May 30 17:59:55 2017
+Results reported on Tue May 30 17:59:56 2017
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python count_community.py
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :               6.39 sec.
+    Max Memory :             1203 MB
+    Average Memory :         1193.00 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Processes :          3
+    Max Threads :            43
+
+The output (if any) follows:
+
+Traceback (most recent call last):
+  File "count_community.py", line 47, in <module>
+    bin_edges = create_quantiles(arr, 10)
+  File "count_community.py", line 13, in create_quantiles
+    bin_edges = stats.mstats.mquantiles(values, probs)
+NameError: global name 'values' is not defined
+Sender: LSF System <lsfadmin@irlbxph019.irl.in.ibm.com>
+Subject: Job 8810: <python count_community.py> in cluster <cluster1> Done
+
+Job <python count_community.py> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <cluster1>.
+Job was executed on host(s) <irlbxph019.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <cluster1>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/feature_computation/wordcooccurrence> was used as the working directory.
+Started at Tue May 30 18:03:57 2017
+Results reported on Tue May 30 18:03:58 2017
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python count_community.py
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               3.68 sec.
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+
+The output (if any) follows:
+
+Sender: LSF System <lsfadmin@irlbxph019.irl.in.ibm.com>
+Subject: Job 8814: <python count_community.py> in cluster <cluster1> Done
+
+Job <python count_community.py> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <cluster1>.
+Job was executed on host(s) <irlbxph019.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <cluster1>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/feature_computation/wordcooccurrence> was used as the working directory.
+Started at Tue May 30 18:10:39 2017
+Results reported on Tue May 30 18:10:40 2017
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python count_community.py
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               3.72 sec.
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+
+The output (if any) follows:
+
+[ 1.  1.  1.  1.  1.  1.  1.  1.  1.  9.]
+Sender: LSF System <lsfadmin@irlbxph019.irl.in.ibm.com>
+Subject: Job 8817: <python count_community.py> in cluster <cluster1> Done
+
+Job <python count_community.py> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <cluster1>.
+Job was executed on host(s) <irlbxph019.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <cluster1>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/feature_computation/wordcooccurrence> was used as the working directory.
+Started at Tue May 30 18:11:14 2017
+Results reported on Tue May 30 18:11:14 2017
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python count_community.py
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               3.82 sec.
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+
+The output (if any) follows:
+
+[ 1.  1.  1.  1.  1.  1.  2.  2.  2.  9.]
+Sender: LSF System <lsfadmin@irlbxph019.irl.in.ibm.com>
+Subject: Job 8819: <python count_community.py> in cluster <cluster1> Done
+
+Job <python count_community.py> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <cluster1>.
+Job was executed on host(s) <irlbxph019.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <cluster1>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/feature_computation/wordcooccurrence> was used as the working directory.
+Started at Tue May 30 18:11:56 2017
+Results reported on Tue May 30 18:11:56 2017
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python count_community.py
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               4.26 sec.
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+
+The output (if any) follows:
+
+[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+[ 1.  1.  1.  1.  1.  1.  2.  2.  2.  9.]
+Sender: LSF System <lsfadmin@irlbxph019.irl.in.ibm.com>
+Subject: Job 8820: <python count_community.py> in cluster <cluster1> Done
+
+Job <python count_community.py> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <cluster1>.
+Job was executed on host(s) <irlbxph019.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <cluster1>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/feature_computation/wordcooccurrence> was used as the working directory.
+Started at Tue May 30 18:13:39 2017
+Results reported on Tue May 30 18:13:40 2017
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python count_community.py
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               3.83 sec.
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+
+The output (if any) follows:
+
+[ 1.  1.  1.  1.  1.  1.  1.  2.  2.  2.  9.]
+Sender: LSF System <lsfadmin@irlbxph019.irl.in.ibm.com>
+Subject: Job 8821: <python count_community.py> in cluster <cluster1> Done
+
+Job <python count_community.py> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <cluster1>.
+Job was executed on host(s) <irlbxph019.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <cluster1>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/feature_computation/wordcooccurrence> was used as the working directory.
+Started at Tue May 30 18:14:21 2017
+Results reported on Tue May 30 18:14:22 2017
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python count_community.py
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               3.54 sec.
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+
+The output (if any) follows:
+
+[ 1.  1.  1.  1.  1.  1.  2.  2.  2.  9.]

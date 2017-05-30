@@ -1,0 +1,72 @@
+Sender: LSF System <lsfadmin@irlbxph019.irl.in.ibm.com>
+Subject: Job 8824: <python get_features_undirected_weighted.py> in cluster <cluster1> Exited
+
+Job <python get_features_undirected_weighted.py> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <cluster1>.
+Job was executed on host(s) <irlbxph019.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <cluster1>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/feature_computation> was used as the working directory.
+Started at Tue May 30 18:45:31 2017
+Results reported on Tue May 30 18:45:47 2017
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python get_features_undirected_weighted.py
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :               18.52 sec.
+    Max Memory :             7324 MB
+    Average Memory :         7291.33 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Processes :          3
+    Max Threads :            43
+
+The output (if any) follows:
+
+Traceback (most recent call last):
+  File "get_features_undirected_weighted.py", line 117, in <module>
+    function(l)
+  File "get_features_undirected_weighted.py", line 10, in function
+    clustering_coefficient = normalise(clustering_coefficient)
+  File "/home/ayushidalmia/interpretNode/feature_computation/utils.py", line 16, in normalise
+    bin_edges = stats.mstats.mquantiles(sorted(input_dictionary.values()),probs = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9,1.0])
+TypeError: mquantiles() got an unexpected keyword argument 'probs'
+Sender: LSF System <lsfadmin@irlbxph019.irl.in.ibm.com>
+Subject: Job 8826: <python get_features_undirected_weighted.py> in cluster <cluster1> Done
+
+Job <python get_features_undirected_weighted.py> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <cluster1>.
+Job was executed on host(s) <irlbxph019.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <cluster1>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/feature_computation> was used as the working directory.
+Started at Tue May 30 18:46:37 2017
+Results reported on Tue May 30 18:46:53 2017
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python get_features_undirected_weighted.py
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               18.27 sec.
+    Max Memory :             3279 MB
+    Average Memory :         3255.33 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Processes :          3
+    Max Threads :            43
+
+The output (if any) follows:
+

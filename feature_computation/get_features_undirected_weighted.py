@@ -111,7 +111,8 @@ f=open(baseInputDir+inputfilename, 'r')
 G=nx.read_weighted_edgelist(f,create_using=nx.Graph()) 
 f.close()
 
-list_1 = [1,2,3,4,5,6,7,9,10,12]
+#list_1 = [1,2,3,4,5,6,7,9,10,12]
+list_1 = [1]
 for l in list_1:
 	function(l)
 

@@ -4,7 +4,9 @@ baseDir="/home/ayushidalmia/interpretNode/graphs/features/"+graph_file+"/"
 outDir = "/home/ayushidalmia/interpretNode/logs/binning/"
 from collections import defaultdict
 
-features = ["isFromSameCommunity","is1stDegree","is2ndDegree","countCommunity","edgeWeight"]
+'''
+#features = ["isFromSameCommunity","is1stDegree","is2ndDegree","countCommunity","edgeWeight"]
+features = ["countCommunity"]
 for feature in features:
 	input_files = []
 	input_files.append(feature+"_dev")
@@ -26,10 +28,11 @@ for feature in features:
 	for keys in sorted(dict_class.keys()):
 		f.write(str(keys)+"\t"+str(dict_class[keys])+"\n")
 	f.close()
+'''
 
 
-
-features = ["clustering_coefficient.txt","load_centrality.txt","shortest_path_length.txt","average_neighbor_degree.txt","betweenness_centrality.txt","closeness_centrality.txt","degree_centrality.txt"]
+#features = ["clustering_coefficient.txt","load_centrality.txt","shortest_path_length.txt","average_neighbor_degree.txt","betweenness_centrality.txt","closeness_centrality.txt","degree_centrality.txt"]
+features = ["clustering_coefficient.txt"]
 for feature in features:
         input_files = ["train_"+feature,"test_"+feature, "dev_"+feature]
 

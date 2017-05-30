@@ -3,14 +3,13 @@ import numpy as np
 import random
 import math
 from scipy import stats
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 random.seed(123)
 mat = scipy.io.loadmat('/home/ayushidalmia/interpretNode/graphs/dataset/POS.mat')
 
 def create_quantiles(arr, num_bins):
-  sorted(arr)
-  probs = [ (i/num_bins) for i in range(1, num_bins+1)]
-  bin_edges = stats.mstats.mquantiles(values, probs)
+  probs = [ (float(i)/num_bins) for i in range(1, num_bins+1)]
+  bin_edges = stats.mstats.mquantiles(sorted(arr), probs)
   return bin_edges
 
 def get_class(num, bin_edges):
@@ -37,14 +36,15 @@ def run_to_file():
   i=0
   end=len(keys)
   arr = []
-  while i<=end:
+  while i< end:
     node = keys[i]
     arr.append(len(nodes_2_c[node]))
     i = i + 1
   return arr
+
 arr = run_to_file()
 bin_edges = create_quantiles(arr, 10)
-
+print bin_edges
 def write_to_file(file, start, end):
   w=open(file, 'w')
   i=start
