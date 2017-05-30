@@ -1,0 +1,109 @@
+Sender: LSF System <lsfadmin@irlbxph019.irl.in.ibm.com>
+Subject: Job 8663: <bash prun.sh> in cluster <cluster1> Done
+
+Job <bash prun.sh> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <cluster1>.
+Job was executed on host(s) <irlbxph019.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <cluster1>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/embeddingmodel/snap/examples/node2vec> was used as the working directory.
+Started at Mon May 29 18:38:58 2017
+Results reported on Tue May 30 00:06:54 2017
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+bash prun.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :               670682.12 sec.
+    Max Memory :             9596 MB
+    Average Memory :         8345.05 MB
+    Total Requested Memory : -
+    Delta Memory :           -
+    (Delta: the difference between Total Requested Memory and Max Memory.)
+    Max Processes :          4
+    Max Threads :            44
+
+The output (if any) follows:
+
+
+An algorithmic framework for representational learning on graphs. [May 23 2017]
+================================================================================
+Input graph path (-i:)=/home/ayushidalmia/interpretNode/graphs/edgelist/graph3
+Output graph path (-o:)=/home/ayushidalmia/interpretNode/graphs/embeddings/paper-0.25-0.5
+Number of dimensions. Default is 128 (-d:)=128
+Length of walk per source. Default is 80 (-l:)=80
+Number of walks per source. Default is 10 (-r:)=10
+Context size for optimization. Default is 10 (-k:)=10
+Number of epochs in SGD. Default is 1 (-e:)=1
+Return hyperparameter. Default is 1 (-p:)=0.25
+Inout hyperparameter. Default is 1 (-q:)=0.5
+Verbose output. (-v)=NO
+Graph is directed. (-dr)=YES
+Graph is weighted. (-w)=NO
+
+An algorithmic framework for representational learning on graphs. [May 23 2017]
+================================================================================
+Input graph path (-i:)=/home/ayushidalmia/interpretNode/graphs/edgelist/graph3
+Output graph path (-o:)=/home/ayushidalmia/interpretNode/graphs/embeddings/paper-0.5-0.5
+Number of dimensions. Default is 128 (-d:)=128
+Length of walk per source. Default is 80 (-l:)=80
+Number of walks per source. Default is 10 (-r:)=10
+Context size for optimization. Default is 10 (-k:)=10
+Number of epochs in SGD. Default is 1 (-e:)=1
+Return hyperparameter. Default is 1 (-p:)=0.5
+Inout hyperparameter. Default is 1 (-q:)=0.5
+Verbose output. (-v)=NO
+Graph is directed. (-dr)=YES
+Graph is weighted. (-w)=NO
+prun.sh: line 5: 22856 Segmentation fault      (core dumped) ./node2vec -i:/home/ayushidalmia/interpretNode/graphs/edgelist/graph3 -o:/home/ayushidalmia/interpretNode/graphs/embeddings/paper-$i-$j -p:$i -q:$j -dr
+
+An algorithmic framework for representational learning on graphs. [May 23 2017]
+================================================================================
+Input graph path (-i:)=/home/ayushidalmia/interpretNode/graphs/edgelist/graph3
+Output graph path (-o:)=/home/ayushidalmia/interpretNode/graphs/embeddings/paper-1-2
+Number of dimensions. Default is 128 (-d:)=128
+Length of walk per source. Default is 80 (-l:)=80
+Number of walks per source. Default is 10 (-r:)=10
+Context size for optimization. Default is 10 (-k:)=10
+Number of epochs in SGD. Default is 1 (-e:)=1
+Return hyperparameter. Default is 1 (-p:)=1
+Inout hyperparameter. Default is 1 (-q:)=2
+Verbose output. (-v)=NO
+Graph is directed. (-dr)=YES
+Graph is weighted. (-w)=NO
+
+An algorithmic framework for representational learning on graphs. [May 23 2017]
+================================================================================
+Input graph path (-i:)=/home/ayushidalmia/interpretNode/graphs/edgelist/graph3
+Output graph path (-o:)=/home/ayushidalmia/interpretNode/graphs/embeddings/paper-1-4
+Number of dimensions. Default is 128 (-d:)=128
+Length of walk per source. Default is 80 (-l:)=80
+Number of walks per source. Default is 10 (-r:)=10
+Context size for optimization. Default is 10 (-k:)=10
+Number of epochs in SGD. Default is 1 (-e:)=1
+Return hyperparameter. Default is 1 (-p:)=1
+Inout hyperparameter. Default is 1 (-q:)=4
+Verbose output. (-v)=NO
+Graph is directed. (-dr)=YES
+Graph is weighted. (-w)=NO
+
+An algorithmic framework for representational learning on graphs. [May 23 2017]
+================================================================================
+Input graph path (-i:)=/home/ayushidalmia/interpretNode/graphs/edgelist/graph3
+Output graph path (-o:)=/home/ayushidalmia/interpretNode/graphs/embeddings/paper-2-1
+Number of dimensions. Default is 128 (-d:)=128
+Length of walk per source. Default is 80 (-l:)=80
+Number of walks per source. Default is 10 (-r:)=10
+Context size for optimization. Default is 10 (-k:)=10
+Number of epochs in SGD. Default is 1 (-e:)=1
+Return hyperparameter. Default is 1 (-p:)=2
+Inout hyperparameter. Default is 1 (-q:)=1
+Verbose output. (-v)=NO
+Graph is directed. (-dr)=YES
+Graph is weighted. (-w)=NO
+prun.sh: line 5:  5645 Segmentation fault      (core dumped) ./node2vec -i:/home/ayushidalmia/interpretNode/graphs/edgelist/graph3 -o:/home/ayushidalmia/interpretNode/graphs/embeddings/paper-$i-$j -p:$i -q:$j -dr
