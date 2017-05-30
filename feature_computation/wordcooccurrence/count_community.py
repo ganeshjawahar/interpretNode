@@ -50,7 +50,7 @@ def write_to_file(file, start, end):
   i=start
   while i<=end:
     node = keys[i]
-    cl = get_class(len(nodes_2_c[node]))
+    cl = get_class(len(nodes_2_c[node]), bin_edges)
     w.write(node+"\t"+str(cl)+"\n")
     i = i + 1
   w.close()
