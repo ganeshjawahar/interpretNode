@@ -59,7 +59,6 @@ tr=int(len(keys)*0.7)
 dev=int(len(keys)*0.1)
 test=len(keys)-tr-dev
 baseDir = "/home/ayushidalmia/interpretNode/graphs/features/graph4/"
-run_to_file(keys)
 write_to_file(baseDir+'countCommunity_train', 0, tr-1)
 write_to_file(baseDir+'countCommunity_dev', tr, tr+dev-1)
 write_to_file(baseDir+'countCommunity_test', tr+dev, tr+dev+test-1)
