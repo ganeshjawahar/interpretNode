@@ -16,7 +16,7 @@ def create_quantiles(arr, num_bins):
 def get_class(num, bin_edges):
   i = 0
   for be in bin_edges[1:]:
-    if num < be:
+    if num <= be:
       return i
     i = i + 1
   return None
