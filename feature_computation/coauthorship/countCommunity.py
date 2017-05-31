@@ -4,6 +4,20 @@ import itertools
 import math
 random.seed(123)
 
+from scipy import stats
+def create_quantiles(arr, num_bins):
+  probs = [ (float(i)/num_bins) for i in range(1, num_bins+1)]
+  bin_edges = stats.mstats.mquantiles(sorted(arr), probs)
+  return bin_edges
+
+def get_class(num, bin_edges):
+  i = 0
+  for be in bin_edges[1:]:
+    if num <= be:
+      return i
+    i = i + 1
+  return None
+
 def get_authid_map():
   # get authid map
   authids = [line.rstrip('\n') for line in open('authids')]
@@ -75,14 +89,35 @@ train_size = int(tr * len(auths))
 dev_size = int(dev * len(auths))
 test_size = len(auths) - train_size - dev_size
 
+def run_to_file():
+  i=0
+  end=len(auths)
+  arr = []
+  while i < end:
+    cur_auth=auths[i]
+    cur_cats=author_2_category[cur_auth]
+    arr.append(len(cur_cats))
+    i = i + 1
+  return arr
+
+arr = run_to_file()
+bin_edges = create_quantiles(arr, 10)
+print bin_edges
+
 def write_file(file, start, end):
   w = open(file, 'w')
+  mp = {}
   while start <= end:
     cur_auth=auths[start]
     cur_cats=author_2_category[cur_auth]
-    w.write(str(cur_auth)+"\t"+str(len(cur_cats))+"\n")
+    cl = get_class(len(cur_cats), bin_edges)
+    w.write(str(cur_auth)+"\t"+str(cl)+"\n")
     start = start + 1
+    if cl not in mp:
+      mp[cl] = 0
+    mp[cl] = mp[cl] + 1
   w.close()
+  print(mp)
 
 baseDir = "/home/ayushidalmia/interpretNode/graphs/features/graph1/"
 write_file(baseDir+'countCommunity_train', 0, train_size-1)

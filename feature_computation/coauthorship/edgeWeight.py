@@ -4,6 +4,20 @@ import itertools
 import math
 random.seed(123)
 
+from scipy import stats
+def create_quantiles(arr, num_bins):
+  probs = [ (float(i)/num_bins) for i in range(1, num_bins+1)]
+  bin_edges = stats.mstats.mquantiles(sorted(arr), probs)
+  return bin_edges
+
+def get_class(num, bin_edges):
+  i = 0
+  for be in bin_edges[1:]:
+    if num <= be:
+      return i
+    i = i + 1
+  return None
+
 def get_authid_map():
   # get authid map
   authids = [line.rstrip('\n') for line in open('authids')]
@@ -77,6 +91,25 @@ for a in auths:
       mx=author_2_author[a][b]
 print(mx)
 
+def run_to_file():
+  arr = []
+  for i in xrange(len(auths)):
+    cur_auths = author_2_author[auths[i]].keys()
+    random.shuffle(cur_auths)
+    train_size = int(tr * len(cur_auths))
+    dev_size = int(dev * len(cur_auths))
+    test_size = len(cur_auths) - train_size - dev_size
+    j = 0
+    for auth in cur_auths:
+      assert(authid_map[auths[i]]!=None)
+      assert(authid_map[auth]!=None)
+      arr.append(author_2_author[auths[i]][auth])
+  return arr
+
+arr = run_to_file()
+bin_edges = create_quantiles(arr, 10)
+print bin_edges
+
 baseDir = "/home/ayushidalmia/interpretNode/graphs/features/graph1/"
 w1 = open(baseDir+'edgeWeight_train', 'w')
 w2 = open(baseDir+'edgeWeight_dev', 'w')
@@ -92,19 +125,20 @@ for i in xrange(len(auths)):
   for auth in cur_auths:
     assert(authid_map[auths[i]]!=None)
     assert(authid_map[auth]!=None)
-    st = str(authid_map[auths[i]])+"\t"+str(authid_map[auth])+"\t"+str(getclass(author_2_author[auths[i]][auth]))+"\n"
+    cl = get_class(author_2_author[auths[i]][auth], bin_edges)
+    st = str(authid_map[auths[i]])+"\t"+str(authid_map[auth])+"\t"+str(cl)+"\n"
     if j < train_size:
       w1.write(st)
     elif j < train_size + dev_size:
       w2.write(st)
     else:
       w3.write(st)
-    j = j + 1    
-    cl = getclass(author_2_author[auths[i]][auth])
+    j = j + 1  
     if cl not in class_map:
       class_map[cl] = 0
     class_map[cl] = class_map[cl] + 1
 w1.close()
 w2.close()
 w3.close()
-#print(class_map)
+print(class_map)
+

@@ -4,6 +4,20 @@ import itertools
 import math
 random.seed(123)
 
+from scipy import stats
+def create_quantiles(arr, num_bins):
+  probs = [ (float(i)/num_bins) for i in range(1, num_bins+1)]
+  bin_edges = stats.mstats.mquantiles(sorted(arr), probs)
+  return bin_edges
+
+def get_class(num, bin_edges):
+  i = 0
+  for be in bin_edges[1:]:
+    if num <= be:
+      return i
+    i = i + 1
+  return None
+
 def get_authid_map():
   # get authid map
   authids = [line.rstrip('\n') for line in open('authids')]
@@ -88,20 +102,49 @@ for a in auths:
 #print(class_map)
 baseDir = "/home/ayushidalmia/interpretNode/graphs/features/graph1/"
 
+def run_to_file():
+  i=0
+  end=len(auths)
+  arr = []
+  while i < end:
+    arr.append(len(author_2_author[auths[i]]))
+    i = i + 1
+  return arr
+
+arr = run_to_file()
+bin_edges = create_quantiles(arr, 10)
+print bin_edges
+
+mp = {}
 w = open(baseDir+'countDegree_train', 'w')
 for i in xrange(train_size):
   assert(authid_map[auths[i]]!=None)
-  w.write(str(authid_map[auths[i]])+"\t"+str(getclass(len(author_2_author[auths[i]])))+"\n")
+  cl = get_class(len(author_2_author[auths[i]]), bin_edges)
+  w.write(str(authid_map[auths[i]])+"\t"+str(cl)+"\n")
+  if cl not in mp:
+    mp[cl] = 0
+  mp[cl] = mp[cl] + 1
 w.close()
+print(mp)
 
 w = open(baseDir+'countDegree_dev', 'w')
 for i in xrange(dev_size):
   assert(authid_map[auths[train_size+i]]!=None)
-  w.write(str(authid_map[auths[train_size+i]])+"\t"+str(getclass(len(author_2_author[auths[train_size+i]])))+"\n")
+  cl = get_class(len(author_2_author[auths[train_size+i]]), bin_edges)
+  w.write(str(authid_map[auths[train_size+i]])+"\t"+str(cl)+"\n")
+  if cl not in mp:
+    mp[cl] = 0
+  mp[cl] = mp[cl] + 1
 w.close()
+print(mp)
 
 w = open(baseDir+'countDegree_test', 'w')
 for i in xrange(test_size):
   assert(authid_map[auths[train_size+dev_size+i]]!=None)
-  w.write(str(authid_map[auths[train_size++dev_size+i]])+"\t"+str(getclass(len(author_2_author[auths[train_size+dev_size+i]])))+"\n")
+  cl = get_class(len(author_2_author[auths[train_size++dev_size+i]]), bin_edges)
+  w.write(str(authid_map[auths[train_size++dev_size+i]])+"\t"+str(cl)+"\n")
+  if cl not in mp:
+    mp[cl] = 0
+  mp[cl] = mp[cl] + 1
 w.close()
+print(mp)

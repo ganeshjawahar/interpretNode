@@ -5,6 +5,20 @@ import math
 random.seed(123)
 mat = scipy.io.loadmat('/home/ayushidalmia/interpretNode/graphs/dataset/POS.mat')
 
+from scipy import stats
+def create_quantiles(arr, num_bins):
+  probs = [ (float(i)/num_bins) for i in range(1, num_bins+1)]
+  bin_edges = stats.mstats.mquantiles(sorted(arr), probs)
+  return bin_edges
+
+def get_class(num, bin_edges):
+  i = 0
+  for be in bin_edges[1:]:
+    if num <= be:
+      return i
+    i = i + 1
+  return None
+
 graph=mat['network']
 edges=[]
 cx = scipy.sparse.coo_matrix(graph)
@@ -16,15 +30,28 @@ for i,j,v in zip(cx.row, cx.col, cx.data):
 
 random.shuffle(edges)
 
-def getclass(num):
-  return 1 + int(math.floor(num/10))
+def run_to_file():
+  i=0
+  end=len(edges)
+  arr = []
+  while i < end:
+    edg = edges[i]
+    arr.append(edg[2])
+    i = i + 1
+  return arr
+
+arr = run_to_file()
+bin_edges = create_quantiles(arr, 10)
+print bin_edges
 
 def write_to_file(file, start, end):
   w=open(file, 'w')
   i=start
+  mp = {}
   while i<=end:
     edg = edges[i]
-    w.write(edg[0]+"\t"+edg[1]+"\t"+str(getclass(edg[2]))+"\n")
+    cl = get_class(edg[2], bin_edges)
+    w.write(edg[0]+"\t"+edg[1]+"\t"+str(cl)+"\n")
     i = i + 1
   w.close()
 
