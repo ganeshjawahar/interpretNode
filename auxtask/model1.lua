@@ -68,6 +68,8 @@ function get_data(data_file, type)
 			break
 		end
 		local dcontent = stringx.split(stringx.strip(dline),'\t')
+		--print(dline)
+		--print(dcontent)
 		assert(#dcontent==2)
 		local label = dcontent[2]
 		if params.label2index[label] == nil then

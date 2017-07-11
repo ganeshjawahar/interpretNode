@@ -114,7 +114,7 @@ def write_set(file, mp):
   authors = mp.keys()
   print(len(authors))
   for i in xrange(succ):
-    print(file+"\t"+str(i))
+    #print(file+"\t"+str(i))
     while True:
       p1=authors[random.randint(0, len(authors)-1)]
       p2=authors[random.randint(0, len(authors)-1)]
@@ -124,10 +124,11 @@ def write_set(file, mp):
   w.close()
 baseDir = "/home/ayushidalmia/interpretNode/graphs/features/graph1/"
 print('train set...')
-write_set(baseDir+'is2ndDegree_train', train_auth_2_auth)
+write_set(baseDir+'train_is2ndDegree.txt', train_auth_2_auth)
 
+#swap dev and test
 print('dev set...')
-write_set(baseDir+'is2ndDegree_dev', dev_auth_2_auth)
+write_set(baseDir+'test_is2ndDegree.txt', dev_auth_2_auth)
 
 print('test set...')
-write_set(baseDir+'is2ndDegree_test', test_auth_2_auth)
+write_set(baseDir+'dev_is2ndDegree.txt', test_auth_2_auth)

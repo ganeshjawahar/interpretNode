@@ -73,8 +73,21 @@ def function(input):
 		write_to_file(test_data,baseDir+"test_shortest_path_length.txt")
 
 		#jaccard coefficient same for weighted and non-weighted
+
+        if input==8:
+                jaccard_coefficient = nx.jaccard_coefficient(G)
+                jaccard_coefficient_dict = {}
+                for u,v,p in jaccard_coefficient:
+                        jaccard_coefficient_dict[str(u)+"\t"+str(v)] = p
+                jaccard_coefficient_dict = normalise(jaccard_coefficient_dict)
+                train_keys, dev_keys, test_keys = create_train_test_dev_split(jaccard_coefficient_dict.keys())
+                train_data, dev_data, test_data = write_train_test_dev(jaccard_coefficient_dict,train_keys,dev_keys,test_keys)
+                write_to_file(train_data,baseDir+"train_jaccard_coefficient_dict.txt")
+                write_to_file(dev_data,baseDir+"dev_jaccard_coefficient_dict.txt")
+                write_to_file(test_data,baseDir+"test_jaccard_coefficient_dict.txt")
+
 	if input==9:
-		katz_centrality = nx.katz_centrality(G,weight='weight')
+		katz_centrality = nx.katz_centrality(G,weight='weight',alpha=0.9, max_iter=100000)
 		katz_centrality = normalise(katz_centrality)
 		train_keys, dev_keys, test_keys = create_train_test_dev_split(katz_centrality.keys())
 		train_data, dev_data, test_data = write_train_test_dev(katz_centrality,train_keys,dev_keys,test_keys)
@@ -112,7 +125,7 @@ G=nx.read_weighted_edgelist(f,create_using=nx.Graph())
 f.close()
 
 #list_1 = [1,2,3,4,5,6,7,9,10,12]
-list_1 = [1]
+list_1 = [7]
 for l in list_1:
 	function(l)
 

@@ -1,17 +1,18 @@
 import networkx as nx
 from utils import *
 import sys
+import random
 
 def function(input):
-	'''
-	clustering_coefficient = nx.clustering(G)
-	clustering_coefficient = normalise(clustering_coefficient)
-	train_keys, dev_keys, test_keys = create_train_test_dev_split(clustering_coefficient.keys())
-	train_data, dev_data, test_data = write_train_test_dev(clustering_coefficient,train_keys,dev_keys,test_keys)
-	write_to_file(train_data,baseDir+"train_clustering_coefficient.txt")
-	write_to_file(dev_data,baseDir+"dev_clustering_coefficient.txt")
-	write_to_file(test_data,baseDir+"test_clustering_coefficient.txt")
-	'''
+	if input==1:
+		clustering_coefficient = nx.clustering(G)
+		clustering_coefficient = normalise(clustering_coefficient)
+		train_keys, dev_keys, test_keys = create_train_test_dev_split(clustering_coefficient.keys())
+		train_data, dev_data, test_data = write_train_test_dev(clustering_coefficient,train_keys,dev_keys,test_keys)
+		write_to_file(train_data,baseDir+"train_clustering_coefficient.txt")
+		write_to_file(dev_data,baseDir+"dev_clustering_coefficient.txt")
+		write_to_file(test_data,baseDir+"test_clustering_coefficient.txt")
+	
 	if input==2:
 		betweenness_centrality = nx.betweenness_centrality(G,normalized=True)
 		betweenness_centrality = normalise(betweenness_centrality)
@@ -58,19 +59,38 @@ def function(input):
 		write_to_file(test_data,baseDir+"test_load_centrality.txt")
 
 	if input==7:
+                shortest_path_length = {}
+                nodes_in_graph = G.nodes()
+                random.shuffle(nodes_in_graph)
+                subset_of_nodes = nodes_in_graph[:200000]
+                for i in range(len(subset_of_nodes)-1):
+                        key_1 = subset_of_nodes[i]
+                        key_2 = subset_of_nodes[i+1]
+
+                        #print key_1, key_2
+                        try:
+                                #print nx.shortest_path_length(G,source=key_1,target=key_2)
+                                shortest_path_length[str(key_1)+"\t"+str(key_2)] = nx.shortest_path_length(G,source=key_1,target=key_2)
+                        except:
+                                #print 0
+                                shortest_path_length[str(key_1)+"\t"+str(key_2)] = 0
+
+		'''
 		shortest_path_length_dict = nx.shortest_path_length(G)
 		shortest_path_length = {}
 		for key_1 in shortest_path_length_dict:
 			for key_2 in shortest_path_length_dict[key_1]:
 				shortest_path_length[str(key_1)+"\t"+str(key_2)] = shortest_path_length_dict[key_1][key_2]
+		'''
 		shortest_patth_length = normalise(shortest_path_length)
 		train_keys, dev_keys, test_keys = create_train_test_dev_split(shortest_path_length.keys())
 		train_data, dev_data, test_data = write_train_test_dev(shortest_path_length,train_keys,dev_keys,test_keys)
 		write_to_file(train_data,baseDir+"train_shortest_path_length.txt")
 		write_to_file(dev_data,baseDir+"dev_shortest_path_length.txt")
 		write_to_file(test_data,baseDir+"test_shortest_path_length.txt")
-
-		'''
+		
+		'''	
+		#Not defined for directed graph
 		jaccard_coefficient = nx.jaccard_coefficient(G)
 		jaccard_coefficient_dict = {}
 		for u,v,p in jaccard_coefficient:
@@ -129,7 +149,14 @@ def function(input):
 		write_to_file(dev_data,baseDir+"dev_outdegree.txt")
 		write_to_file(test_data,baseDir+"test_outdegree.txt")
 
-
+        if input==123:
+                degree = G.degree()
+                degree = normalise(degree)
+                train_keys, dev_keys, test_keys = create_train_test_dev_split(degree.keys())
+                train_data, dev_data, test_data = write_train_test_dev(degree,train_keys,dev_keys,test_keys)
+                write_to_file(train_data,baseDir+"train_degree.txt")
+                write_to_file(dev_data,baseDir+"dev_degree.txt")
+                write_to_file(test_data,baseDir+"test_degree.txt")
 ##Throws error
 #subgraph_centrality = nx.subgraph_centrality(G)
 #print subgraph_centrality
@@ -152,8 +179,9 @@ f=open(baseInputDir+inputfilename, 'r')
 G=nx.read_edgelist(f,create_using=nx.DiGraph()) 
 f.close()
 
-list_1=[2,3,4,5,6,7,9,10,121,122]
+list_1=[7]
 for l in list_1:
-	function(l)	
+	function(l)
+	print l	
 #argument = int(sys.argv[1])
 #function(argument)

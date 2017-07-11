@@ -44,7 +44,6 @@ def run_to_file():
 
 arr = run_to_file()
 bin_edges = create_quantiles(arr, 10)
-print bin_edges
 def write_to_file(file, start, end):
   w=open(file, 'w')
   i=start

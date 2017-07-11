@@ -12,8 +12,9 @@ def normalise(input_dictionary):
  		input_dictionary[key] = int(math.ceil(temp*10))
 	'''
 	from scipy import stats
-	
-	bin_edges = stats.mstats.mquantiles(sorted(input_dictionary.values()),prob = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9,1.0])
+	num_bins = 10
+	probs = [ (float(i)/num_bins) for i in range(1, num_bins+1)]	
+	bin_edges = stats.mstats.mquantiles(sorted(input_dictionary.values()),prob = probs)
 	for key in input_dictionary:
 		for i in range(len(bin_edges)):
 			if input_dictionary[key] <= bin_edges[i]:

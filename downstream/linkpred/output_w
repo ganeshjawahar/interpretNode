@@ -1,0 +1,293 @@
+Sender: LSF System <lsfadmin@irlbxph004.irl.in.ibm.com>
+Subject: Job 1542: <bash link_word.sh> in cluster <IRLGPU> Done
+
+Job <bash link_word.sh> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <IRLGPU>.
+Job was executed on host(s) <irlbxph004.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <IRLGPU>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/downstream/linkpred> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+bash link_word.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1738.08 sec.
+    Max Memory :                                 1350 MB
+    Average Memory :                             717.22 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   3241 MB
+    Max Processes :                              5
+    Max Threads :                                53
+    Run time :                                   2349 sec.
+    Turnaround time :                            2329 sec.
+
+The output (if any) follows:
+
+word-4-4
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-4-4	73.0854555948
+writing output
+word-4-0.25
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-4-0.25	68.7928360147
+writing output
+word-2-0.25
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-2-0.25	67.2732847558
+writing output
+word-4-0.5
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-4-0.5	65.2694610778
+writing output
+word-1-1
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-1-1	69.2960464613
+writing output
+word-0.25-4
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-0.25-4	71.8093932617
+writing output
+word-0.5-1
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-0.5-1	68.7288074454
+writing output
+word-2-0.5
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-2-0.5	67.613267441
+writing output
+graph6_2nd.txt
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/graph6_2nd.txt	64.5426015439
+writing output
+graph6_all.txt
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/graph6_all.txt	81.3000505014
+writing output
+word-4-2
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-4-2	75.8260587259
+writing output
+word-4-1
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-4-1	68.0010461006
+writing output
+word-2-4
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-2-4	75.0351706226
+writing output
+word-2-2
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-2-2	71.4171055479
+writing output
+word-0.25-2
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-0.25-2	70.7055767982
+writing output
+graph6_1st.txt
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/graph6_1st.txt	77.1490152226
+writing output
+word-0.5-0.25
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-0.5-0.25	71.0130942933
+writing output
+word-0.25-1
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-0.25-1	73.7212322343
+writing output
+word-0.5-4
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-0.5-4	71.851778371
+writing output
+word-0.5-2
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-0.5-2	71.0969627011
+writing output
+graph6_dw
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/graph6_dw	67.6069547652
+writing output
+word-1-4
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-1-4	71.339549816
+writing output
+word-2-1
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-2-1	69.3907365991
+writing output
+word-1-0.25
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-1-0.25	67.6087583868
+writing output
+word-1-2
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-1-2	70.8769208571
+writing output
+word-0.5-0.5
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-0.5-0.5	68.780210663
+writing output
+word-0.25-0.25
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-0.25-0.25	74.4904768776
+writing output
+word-1-0.5
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-1-0.5	66.2794892143
+writing output
+word-0.25-0.5
+stating
+Loaded embeddings
+369624
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph4	../../graphs/embeddings/word-0.25-0.5	74.2307553568
+writing output

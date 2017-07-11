@@ -83,6 +83,7 @@ r=open(lab_file, 'r')
 c=0
 mx_label=0
 mx_node=0
+number_of_nodes = 0
 for line in r:
     content=line.strip().split()
     x=long(content[0])#+1
@@ -95,9 +96,13 @@ for line in r:
         xrow[c]=x
         xcol[c]=y
         c=c+1
+    number_of_nodes += 1
 r.close()
-labels_matrix=csc_matrix((xdata, (xrow, xcol)), shape=(mx_node+1, mx_label+1), dtype=np.float32)
-#print(labels_matrix.size)
+
+labels_matrix=csc_matrix((xdata, (xrow, xcol)), shape=(number_of_nodes, mx_label+1), dtype=np.float32)
+
+#sys.exit()
+#print xrow.shape
 '''
 w=open('temp', 'w')
 r=open(embd_file, 'r')
@@ -116,15 +121,23 @@ r.close()
 
 model = Word2Vec.load_word2vec_format(embd_file, binary=False) #,
                                       #norm_only=False)
-features_matrix = numpy.asarray([model[str(node)] for node in range(mx_node+1)])
+features_matrix = numpy.asarray([model[str(node)] for node in range(mx_node+1) if str(node) in model])
+id_matrix = numpy.asarray([node for node in range(mx_node+1) if str(node) in model])
+print "1"
+print xrow.shape
+print features_matrix.shape
+print id_matrix.shape
+print labels_matrix.shape
+print number_of_nodes
+print "END"
 #print(type(features_matrix))
 #sys.exit()
 
 # 2. Shuffle, to create train/test groups
 shuffles = []
-number_shuffles = 2
+number_shuffles = 1
 for x in range(number_shuffles):
-  shuffles.append(skshuffle(features_matrix, labels_matrix))
+  shuffles.append(skshuffle(features_matrix, labels_matrix,id_matrix,random_state=123))
 
 # 3. to score each train/test group
 all_results = defaultdict(list)
@@ -136,12 +149,13 @@ training_percents = [0.7]
 for train_percent in training_percents:
   for shuf in shuffles:
 
-    X, y = shuf
+    X, y,z = shuf
 
     training_size = int(train_percent * X.shape[0])
 
     X_train = X[:training_size, :]
     y_train_ = y[:training_size]
+    z_train = z[:training_size]
 
     y_train = [[] for x in xrange(y_train_.shape[0])]
 
@@ -154,7 +168,7 @@ for train_percent in training_percents:
 
     X_test = X[training_size:, :]
     y_test_ = y[training_size:]
-
+    z_test = z[training_size:]
     y_test = [[] for x in xrange(y_test_.shape[0])]
 
     cy =  y_test_.tocoo()
@@ -174,7 +188,9 @@ for train_percent in training_percents:
         results[average] = f1_score(y_test,  preds, average=average)
 
     all_results[train_percent].append(results)
-
+	
+    
+    
 #print 'Results, using embeddings of dimensionality', X.shape[1]
 #print '-------------------'
 for train_percent in sorted(all_results.keys()):
@@ -187,3 +203,22 @@ for train_percent in sorted(all_results.keys()):
   macro/=len(x)
   print(sys.argv[1]+"\t"+sys.argv[2]+"\t"+str(micro)+"\t"+str(macro))
   #print '-------------------'
+
+data = []
+for i in range(len(preds)):
+	temp1 = preds[i]
+	temp2 = y_test[i]
+	count = 0
+	for j in range(len(temp1)):
+		if temp1[j]==temp2[j]:
+			count+=1
+	score = float(count)/len(temp[1])
+	data.append(str(z_test[i])+"\t"+str(score))
+	
+embeddingfile = sys.argv[2].strip().split("/")[-1]
+graphfile = sys.argv[1].strip().split("/")[-1].split("_")[0]
+outputfolder = sys.argv[3]
+
+f=open(outputfolder+"/"+graphfile+"_"+embeddingfile+"classification.txt","w")
+f.write("\n".join(data))
+f.close()

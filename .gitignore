@@ -13,3 +13,4 @@ graphs/
 logs/
 *.egg
 *.pyc
+auxtask/output/

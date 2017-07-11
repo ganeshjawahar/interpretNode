@@ -1,0 +1,381 @@
+Sender: LSF System <lsfadmin@irlbxph006.irl.in.ibm.com>
+Subject: Job 9856: <bash nc.sh> in cluster <IRLGPU> Exited
+
+Job <bash nc.sh> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <IRLGPU>.
+Job was executed on host(s) <irlbxph006.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <IRLGPU>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/downstream/nodeclass> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+bash nc.sh
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   26187.32 sec.
+    Max Memory :                                 6704 MB
+    Average Memory :                             4201.58 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   8616 MB
+    Max Processes :                              5
+    Max Threads :                                53
+    Run time :                                   28742 sec.
+    Turnaround time :                            28748 sec.
+
+The output (if any) follows:
+
+paper-4-0.25
+paper-4-4
+# nodes with no labels = 68567 out of 304009 nodes
+(235442,)
+(235442, 24)
+(235442, 128)
+Traceback (most recent call last):
+  File "classify.py", line 146, in <module>
+    preds = clf.predict(X_test, top_k_list)
+  File "classify.py", line 22, in predict
+    probs = numpy.asarray(super(TopKRanker, self).predict_proba(X))
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/multiclass.py", line 354, in predict_proba
+    Y = np.array([e.predict_proba(X)[:, 1] for e in self.estimators_]).T
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/logistic.py", line 1095, in predict_proba
+    return self._predict_proba_lr(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 237, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 207, in decision_function
+    dense_output=True) + self.intercept_
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/utils/extmath.py", line 183, in safe_sparse_dot
+    return fast_dot(a, b)
+TypeError: Cannot cast array data from dtype('float64') to dtype('S32') according to the rule 'safe'
+paper-0.5-2
+# nodes with no labels = 68567 out of 304009 nodes
+(235442,)
+(235442, 24)
+(235442, 128)
+Traceback (most recent call last):
+  File "classify.py", line 146, in <module>
+    preds = clf.predict(X_test, top_k_list)
+  File "classify.py", line 22, in predict
+    probs = numpy.asarray(super(TopKRanker, self).predict_proba(X))
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/multiclass.py", line 354, in predict_proba
+    Y = np.array([e.predict_proba(X)[:, 1] for e in self.estimators_]).T
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/logistic.py", line 1095, in predict_proba
+    return self._predict_proba_lr(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 237, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 207, in decision_function
+    dense_output=True) + self.intercept_
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/utils/extmath.py", line 183, in safe_sparse_dot
+    return fast_dot(a, b)
+TypeError: Cannot cast array data from dtype('float64') to dtype('S32') according to the rule 'safe'
+paper-0.5-0.5
+# nodes with no labels = 68567 out of 304009 nodes
+(235442,)
+(235442, 24)
+(235442, 128)
+Traceback (most recent call last):
+  File "classify.py", line 146, in <module>
+    preds = clf.predict(X_test, top_k_list)
+  File "classify.py", line 22, in predict
+    probs = numpy.asarray(super(TopKRanker, self).predict_proba(X))
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/multiclass.py", line 354, in predict_proba
+    Y = np.array([e.predict_proba(X)[:, 1] for e in self.estimators_]).T
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/logistic.py", line 1095, in predict_proba
+    return self._predict_proba_lr(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 237, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 207, in decision_function
+    dense_output=True) + self.intercept_
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/utils/extmath.py", line 183, in safe_sparse_dot
+    return fast_dot(a, b)
+TypeError: Cannot cast array data from dtype('float64') to dtype('S32') according to the rule 'safe'
+paper-2-1
+# nodes with no labels = 68567 out of 304009 nodes
+(235442,)
+(235442, 24)
+(235442, 128)
+Traceback (most recent call last):
+  File "classify.py", line 146, in <module>
+    preds = clf.predict(X_test, top_k_list)
+  File "classify.py", line 22, in predict
+    probs = numpy.asarray(super(TopKRanker, self).predict_proba(X))
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/multiclass.py", line 354, in predict_proba
+    Y = np.array([e.predict_proba(X)[:, 1] for e in self.estimators_]).T
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/logistic.py", line 1095, in predict_proba
+    return self._predict_proba_lr(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 237, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 207, in decision_function
+    dense_output=True) + self.intercept_
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/utils/extmath.py", line 183, in safe_sparse_dot
+    return fast_dot(a, b)
+TypeError: Cannot cast array data from dtype('float64') to dtype('S32') according to the rule 'safe'
+graph3_dw
+# nodes with no labels = 58123 out of 282216 nodes
+(224093,)
+(224093, 24)
+(224093, 128)
+Traceback (most recent call last):
+  File "classify.py", line 146, in <module>
+    preds = clf.predict(X_test, top_k_list)
+  File "classify.py", line 22, in predict
+    probs = numpy.asarray(super(TopKRanker, self).predict_proba(X))
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/multiclass.py", line 354, in predict_proba
+    Y = np.array([e.predict_proba(X)[:, 1] for e in self.estimators_]).T
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/logistic.py", line 1095, in predict_proba
+    return self._predict_proba_lr(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 237, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 207, in decision_function
+    dense_output=True) + self.intercept_
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/utils/extmath.py", line 183, in safe_sparse_dot
+    return fast_dot(a, b)
+TypeError: Cannot cast array data from dtype('float64') to dtype('S32') according to the rule 'safe'
+paper-0.25-4
+paper-4-0.5
+paper-0.5-1
+paper-2-2
+paper-0.25-2
+paper-0.25-1
+paper-2-4
+graph3_2nd.txt
+# nodes with no labels = 56627 out of 273334 nodes
+(216707,)
+(216707, 24)
+(216707, 128)
+Traceback (most recent call last):
+  File "classify.py", line 146, in <module>
+    preds = clf.predict(X_test, top_k_list)
+  File "classify.py", line 22, in predict
+    probs = numpy.asarray(super(TopKRanker, self).predict_proba(X))
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/multiclass.py", line 354, in predict_proba
+    Y = np.array([e.predict_proba(X)[:, 1] for e in self.estimators_]).T
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/logistic.py", line 1095, in predict_proba
+    return self._predict_proba_lr(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 237, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 207, in decision_function
+    dense_output=True) + self.intercept_
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/utils/extmath.py", line 183, in safe_sparse_dot
+    return fast_dot(a, b)
+TypeError: Cannot cast array data from dtype('float64') to dtype('S32') according to the rule 'safe'
+paper-0.25-0.25
+# nodes with no labels = 68567 out of 304009 nodes
+(235442,)
+(235442, 24)
+(235442, 128)
+Traceback (most recent call last):
+  File "classify.py", line 146, in <module>
+    preds = clf.predict(X_test, top_k_list)
+  File "classify.py", line 22, in predict
+    probs = numpy.asarray(super(TopKRanker, self).predict_proba(X))
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/multiclass.py", line 354, in predict_proba
+    Y = np.array([e.predict_proba(X)[:, 1] for e in self.estimators_]).T
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/logistic.py", line 1095, in predict_proba
+    return self._predict_proba_lr(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 237, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 207, in decision_function
+    dense_output=True) + self.intercept_
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/utils/extmath.py", line 183, in safe_sparse_dot
+    return fast_dot(a, b)
+TypeError: Cannot cast array data from dtype('float64') to dtype('S32') according to the rule 'safe'
+paper-1-1
+# nodes with no labels = 68567 out of 304009 nodes
+(235442,)
+(235442, 24)
+(235442, 128)
+Traceback (most recent call last):
+  File "classify.py", line 146, in <module>
+    preds = clf.predict(X_test, top_k_list)
+  File "classify.py", line 22, in predict
+    probs = numpy.asarray(super(TopKRanker, self).predict_proba(X))
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/multiclass.py", line 354, in predict_proba
+    Y = np.array([e.predict_proba(X)[:, 1] for e in self.estimators_]).T
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/logistic.py", line 1095, in predict_proba
+    return self._predict_proba_lr(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 237, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 207, in decision_function
+    dense_output=True) + self.intercept_
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/utils/extmath.py", line 183, in safe_sparse_dot
+    return fast_dot(a, b)
+TypeError: Cannot cast array data from dtype('float64') to dtype('S32') according to the rule 'safe'
+paper-4-2
+paper-2-0.25
+paper-0.5-0.25
+paper-1-0.5
+graph3_1st.txt
+# nodes with no labels = 56627 out of 273334 nodes
+(216707,)
+(216707, 24)
+(216707, 128)
+Traceback (most recent call last):
+  File "classify.py", line 146, in <module>
+    preds = clf.predict(X_test, top_k_list)
+  File "classify.py", line 22, in predict
+    probs = numpy.asarray(super(TopKRanker, self).predict_proba(X))
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/multiclass.py", line 354, in predict_proba
+    Y = np.array([e.predict_proba(X)[:, 1] for e in self.estimators_]).T
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/logistic.py", line 1095, in predict_proba
+    return self._predict_proba_lr(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 237, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 207, in decision_function
+    dense_output=True) + self.intercept_
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/utils/extmath.py", line 183, in safe_sparse_dot
+    return fast_dot(a, b)
+TypeError: Cannot cast array data from dtype('float64') to dtype('S32') according to the rule 'safe'
+paper-1-4
+# nodes with no labels = 68567 out of 304009 nodes
+(235442,)
+(235442, 24)
+(235442, 128)
+Traceback (most recent call last):
+  File "classify.py", line 146, in <module>
+    preds = clf.predict(X_test, top_k_list)
+  File "classify.py", line 22, in predict
+    probs = numpy.asarray(super(TopKRanker, self).predict_proba(X))
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/multiclass.py", line 354, in predict_proba
+    Y = np.array([e.predict_proba(X)[:, 1] for e in self.estimators_]).T
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/logistic.py", line 1095, in predict_proba
+    return self._predict_proba_lr(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 237, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 207, in decision_function
+    dense_output=True) + self.intercept_
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/utils/extmath.py", line 183, in safe_sparse_dot
+    return fast_dot(a, b)
+TypeError: Cannot cast array data from dtype('float64') to dtype('S32') according to the rule 'safe'
+paper-0.25-0.5
+# nodes with no labels = 68567 out of 304009 nodes
+(235442,)
+(235442, 24)
+(235442, 128)
+Traceback (most recent call last):
+  File "classify.py", line 146, in <module>
+    preds = clf.predict(X_test, top_k_list)
+  File "classify.py", line 22, in predict
+    probs = numpy.asarray(super(TopKRanker, self).predict_proba(X))
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/multiclass.py", line 354, in predict_proba
+    Y = np.array([e.predict_proba(X)[:, 1] for e in self.estimators_]).T
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/logistic.py", line 1095, in predict_proba
+    return self._predict_proba_lr(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 237, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 207, in decision_function
+    dense_output=True) + self.intercept_
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/utils/extmath.py", line 183, in safe_sparse_dot
+    return fast_dot(a, b)
+TypeError: Cannot cast array data from dtype('float64') to dtype('S32') according to the rule 'safe'
+graph3_all.txt
+# nodes with no labels = 56627 out of 273334 nodes
+(216707,)
+(216707, 24)
+(216707, 256)
+Traceback (most recent call last):
+  File "classify.py", line 146, in <module>
+    preds = clf.predict(X_test, top_k_list)
+  File "classify.py", line 22, in predict
+    probs = numpy.asarray(super(TopKRanker, self).predict_proba(X))
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/multiclass.py", line 354, in predict_proba
+    Y = np.array([e.predict_proba(X)[:, 1] for e in self.estimators_]).T
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/logistic.py", line 1095, in predict_proba
+    return self._predict_proba_lr(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 237, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 207, in decision_function
+    dense_output=True) + self.intercept_
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/utils/extmath.py", line 183, in safe_sparse_dot
+    return fast_dot(a, b)
+TypeError: Cannot cast array data from dtype('float64') to dtype('S32') according to the rule 'safe'
+paper-4-1
+paper-2-0.5
+# nodes with no labels = 68567 out of 304009 nodes
+(235442,)
+(235442, 24)
+(235442, 128)
+Traceback (most recent call last):
+  File "classify.py", line 146, in <module>
+    preds = clf.predict(X_test, top_k_list)
+  File "classify.py", line 22, in predict
+    probs = numpy.asarray(super(TopKRanker, self).predict_proba(X))
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/multiclass.py", line 354, in predict_proba
+    Y = np.array([e.predict_proba(X)[:, 1] for e in self.estimators_]).T
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/logistic.py", line 1095, in predict_proba
+    return self._predict_proba_lr(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 237, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 207, in decision_function
+    dense_output=True) + self.intercept_
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/utils/extmath.py", line 183, in safe_sparse_dot
+    return fast_dot(a, b)
+TypeError: Cannot cast array data from dtype('float64') to dtype('S32') according to the rule 'safe'
+paper-1-2
+# nodes with no labels = 68567 out of 304009 nodes
+(235442,)
+(235442, 24)
+(235442, 128)
+Traceback (most recent call last):
+  File "classify.py", line 146, in <module>
+    preds = clf.predict(X_test, top_k_list)
+  File "classify.py", line 22, in predict
+    probs = numpy.asarray(super(TopKRanker, self).predict_proba(X))
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/multiclass.py", line 354, in predict_proba
+    Y = np.array([e.predict_proba(X)[:, 1] for e in self.estimators_]).T
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/logistic.py", line 1095, in predict_proba
+    return self._predict_proba_lr(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 237, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 207, in decision_function
+    dense_output=True) + self.intercept_
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/utils/extmath.py", line 183, in safe_sparse_dot
+    return fast_dot(a, b)
+TypeError: Cannot cast array data from dtype('float64') to dtype('S32') according to the rule 'safe'
+paper-1-0.25
+# nodes with no labels = 68567 out of 304009 nodes
+(235442,)
+(235442, 24)
+(235442, 128)
+Traceback (most recent call last):
+  File "classify.py", line 146, in <module>
+    preds = clf.predict(X_test, top_k_list)
+  File "classify.py", line 22, in predict
+    probs = numpy.asarray(super(TopKRanker, self).predict_proba(X))
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/multiclass.py", line 354, in predict_proba
+    Y = np.array([e.predict_proba(X)[:, 1] for e in self.estimators_]).T
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/logistic.py", line 1095, in predict_proba
+    return self._predict_proba_lr(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 237, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 207, in decision_function
+    dense_output=True) + self.intercept_
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/utils/extmath.py", line 183, in safe_sparse_dot
+    return fast_dot(a, b)
+TypeError: Cannot cast array data from dtype('float64') to dtype('S32') according to the rule 'safe'
+paper-0.5-4
+# nodes with no labels = 68567 out of 304009 nodes
+(235442,)
+(235442, 24)
+(235442, 128)
+Traceback (most recent call last):
+  File "classify.py", line 146, in <module>
+    preds = clf.predict(X_test, top_k_list)
+  File "classify.py", line 22, in predict
+    probs = numpy.asarray(super(TopKRanker, self).predict_proba(X))
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/multiclass.py", line 354, in predict_proba
+    Y = np.array([e.predict_proba(X)[:, 1] for e in self.estimators_]).T
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/logistic.py", line 1095, in predict_proba
+    return self._predict_proba_lr(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 237, in _predict_proba_lr
+    prob = self.decision_function(X)
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/linear_model/base.py", line 207, in decision_function
+    dense_output=True) + self.intercept_
+  File "/home/ayushidalmia/.local/lib/python2.7/site-packages/sklearn/utils/extmath.py", line 183, in safe_sparse_dot
+    return fast_dot(a, b)
+TypeError: Cannot cast array data from dtype('float64') to dtype('S32') according to the rule 'safe'

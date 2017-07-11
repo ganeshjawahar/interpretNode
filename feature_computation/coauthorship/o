@@ -1,0 +1,95 @@
+Sender: LSF System <lsfadmin@irlbxph006.irl.in.ibm.com>
+Subject: Job 1139: <top> in cluster <IRLGPU> Exited
+
+Job <top> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <IRLGPU>.
+Job was executed on host(s) <irlbxph006.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <IRLGPU>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/feature_computation/coauthorship> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+top
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.02 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   4 sec.
+    Turnaround time :                            0 sec.
+
+The output (if any) follows:
+
+TERM environment variable not set.
+[?1h=[?25l[H[2J(B[mtop - 16:13:36 up 1 day,  6:00,  2 users,  load average: 0.22, 1.62, 14.98(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m 568 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m 567 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  1.0 (B[m[39;49mus,(B[m[39;49m[1m  1.6 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 97.4 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem: (B[m[39;49m[1m 26343652+(B[m[39;49mtotal,(B[m[39;49m[1m  9266876 (B[m[39;49mused,(B[m[39;49m[1m 25416964+(B[m[39;49mfree,(B[m[39;49m[1m   158012 (B[m[39;49mbuffers(B[m[39;49m(B[m[39;49m[K
+KiB Swap:(B[m[39;49m[1m 26771046+(B[m[39;49mtotal,(B[m[39;49m[1m        0 (B[m[39;49mused,(B[m[39;49m[1m 26771046+(B[m[39;49mfree.(B[m[39;49m[1m  7873680 (B[m[39;49mcached Mem(B[m[39;49m(B[m[39;49m[K
+[K
+[7m  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND     (B[m[39;49m[K
+(B[m[1m22243 ayushid+  20   0   23948   2948   2168 R  12.1  0.0   0:00.02 top         (B[m[39;49m[K
+(B[m    1 root      20   0   33644   4132   2668 S   0.0  0.0   0:02.74 init        (B[m[39;49m[K
+(B[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.21 kthreadd    (B[m[39;49m[K
+(B[m    3 root      20   0       0      0      0 S   0.0  0.0   0:00.02 ksoftirqd/0 (B[m[39;49m[K
+(B[m    5 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:+ (B[m[39;49m[K
+(B[m    6 root      20   0       0      0      0 S   0.0  0.0   0:02.62 kworker/u9+ (B[m[39;49m[K
+(B[m    8 root      20   0       0      0      0 S   0.0  0.0   0:56.16 rcu_sched   (B[m[39;49m[K
+(B[m    9 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh      (B[m[39;49m[K
+(B[m   10 root      20   0       0      0      0 S   0.0  0.0   0:25.73 rcuos/0     (B[m[39;49m[K
+(B[m   11 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcuob/0     (B[m[39;49m[K
+(B[m   12 root      rt   0       0      0      0 S   0.0  0.0   0:00.26 migration/0 (B[m[39;49m[K
+(B[m   13 root      rt   0       0      0      0 S   0.0  0.0   0:00.26 watchdog/0  (B[m[39;49m[K
+(B[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.27 watchdog/1  (B[m[39;49m[K
+(B[m   15 root      rt   0       0      0      0 S   0.0  0.0   0:00.24 migration/1 (B[m[39;49m[K
+(B[m   16 root      20   0       0      0      0 S   0.0  0.0   0:00.00 ksoftirqd/1 (B[m[39;49m[K
+(B[m   18 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/1:+ (B[m[39;49m[K
+(B[m   19 root      20   0       0      0      0 S   0.0  0.0   0:02.12 rcuos/1     (B[m[39;49m[K[?1l>[25;1H
+[?12l[?25h[KSender: LSF System <lsfadmin@irlbxph006.irl.in.ibm.com>
+Subject: Job 1140: <python is2ndDegree.py> in cluster <IRLGPU> Done
+
+Job <python is2ndDegree.py> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <IRLGPU>.
+Job was executed on host(s) <irlbxph006.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <IRLGPU>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/feature_computation/coauthorship> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python is2ndDegree.py
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   72.70 sec.
+    Max Memory :                                 1281 MB
+    Average Memory :                             949.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1335 MB
+    Max Processes :                              3
+    Max Threads :                                4
+    Run time :                                   79 sec.
+    Turnaround time :                            75 sec.
+
+The output (if any) follows:
+
+train set...
+366104
+dev set...
+110745
+test set...
+113980

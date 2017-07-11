@@ -1,0 +1,61 @@
+Sender: LSF System <lsfadmin@irlbxph006.irl.in.ibm.com>
+Subject: Job 1345: <bash c.sh> in cluster <IRLGPU> Done
+
+Job <bash c.sh> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <IRLGPU>.
+Job was executed on host(s) <irlbxph006.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <IRLGPU>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/downstream/clustering> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+bash c.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   4258.26 sec.
+    Max Memory :                                 3833 MB
+    Average Memory :                             2002.04 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   5742 MB
+    Max Processes :                              4
+    Max Threads :                                52
+    Run time :                                   2524 sec.
+    Turnaround time :                            2520 sec.
+
+The output (if any) follows:
+
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-4-0.25	0.00708763374776
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-4-4	0.00606257768671
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-0.5-2	0.0457586733022
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-0.5-0.5	0.0059310855488
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-2-1	0.0466591002402
+../../graphs/labels/graph3_labels	../../graphs/embeddings/graph3_dw	0.0430852115255
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-0.25-4	0.00688409226664
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-4-0.5	0.00667370026975
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-0.5-1	0.00704338701564
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-2-2	0.00762018572965
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-0.25-2	0.00849895729833
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-0.25-1	0.00687934360096
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-2-4	0.007932712312
+../../graphs/labels/graph3_labels	../../graphs/embeddings/graph3_2nd.txt	0.143477368789
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-0.25-0.25	0.00673713425044
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-1-1	0.00764721897043
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-4-2	0.00722846016001
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-2-0.25	0.00656686712187
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-0.5-0.25	0.00664561078144
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-1-0.5	0.00742958015524
+../../graphs/labels/graph3_labels	../../graphs/embeddings/graph3_1st.txt	0.288263036801
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-1-4	0.0050291954535
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-0.25-0.5	0.0442000904494
+../../graphs/labels/graph3_labels	../../graphs/embeddings/graph3_all.txt	0.263531995388
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-4-1	0.00773454293047
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-2-0.5	0.0410943242225
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-1-2	0.0346911634267
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-1-0.25	0.0428575686245
+../../graphs/labels/graph3_labels	../../graphs/embeddings/paper-0.5-4	0.00714815219139

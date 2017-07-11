@@ -131,14 +131,24 @@ def function(input):
 #current_flow_closeness_centrality = nx.current_flow_closeness_centrality(G)
 #print current_flow_closeness_centrality
 
-baseDir="/Users/ayushi/Dropbox/int_node/data/undirected_unweighted/"
-baseInputDir = "/Users/ayushi/Dropbox/int_node/input/"
-inputfilename = "edge_list_test_undirected"
+baseDir="/home/ayushidalmia/interpretNode/graphs/features/graph3/"
+baseInputDir = "/home/ayushidalmia/interpretNode/graphs/edgelist/"
+inputfilename = "graph3"
+
+f=open(baseInputDir+inputfilename, 'r')
+G=nx.read_weighted_edgelist(f,create_using=nx.Graph())
+f.close()
 
 #For undirected graph
 f=open(baseInputDir+inputfilename, 'r')
 G=nx.read_edgelist(f,create_using=nx.Graph()) 
 f.close()
 
-argument = int(sys.argv[1])
-function(argument)
+list_1=[1,2,3,4,5,6,7,8,9,10,11,12]
+
+for l in list_1:
+        function(l)
+
+
+#argument = int(sys.argv[1])
+#function(argument)

@@ -1,0 +1,293 @@
+Sender: LSF System <lsfadmin@irlbxph004.irl.in.ibm.com>
+Subject: Job 1543: <bash link_author.sh> in cluster <IRLGPU> Done
+
+Job <bash link_author.sh> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <IRLGPU>.
+Job was executed on host(s) <irlbxph004.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <IRLGPU>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/downstream/linkpred> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+bash link_author.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   14903.42 sec.
+    Max Memory :                                 22716 MB
+    Average Memory :                             6788.07 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   24639 MB
+    Max Processes :                              5
+    Max Threads :                                53
+    Run time :                                   19733 sec.
+    Turnaround time :                            19714 sec.
+
+The output (if any) follows:
+
+author-1-0.25
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-1-0.25	98.8342022178
+writing output
+author-4-0.5
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-4-0.5	98.7605259911
+writing output
+author-4-2
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-4-2	98.7610971247
+writing output
+author-1-2
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-1-2	99.183507491
+writing output
+author-2-2
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-2-2	98.9122190594
+writing output
+author-4-1
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-4-1	98.6729141061
+writing output
+graph5_1st.txt
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/graph5_1st.txt	99.0917834444
+writing output
+graph5_all.txt
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/graph5_all.txt	99.6268213449
+writing output
+author-1-1
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-1-1	99.2071524196
+writing output
+author-2-0.5
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-2-0.5	98.6379607334
+writing output
+graph5_dw
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/graph5_dw	93.4705729155
+writing output
+author-0.5-0.5
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-0.5-0.5	98.8490516899
+writing output
+author-1-0.5
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-1-0.5	98.992977342
+writing output
+author-2-1
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-2-1	98.5277319602
+writing output
+author-4-0.25
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-4-0.25	98.5489781279
+writing output
+author-4-4
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-4-4	99.2245148792
+writing output
+author-1-4
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-1-4	99.2482740344
+writing output
+author-0.25-0.25
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-0.25-0.25	98.5538898763
+writing output
+author-0.25-1
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-0.25-1	98.9838392053
+writing output
+author-0.5-2
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-0.5-2	99.1219392954
+writing output
+author-0.25-2
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-0.25-2	99.222230345
+writing output
+author-0.5-4
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-0.5-4	99.2072666463
+writing output
+author-2-0.25
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-2-0.25	98.5673686279
+writing output
+author-0.5-1
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-0.5-1	98.9232990501
+writing output
+author-0.25-4
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-0.25-4	99.4057926648
+writing output
+author-2-4
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-2-4	99.1331335127
+writing output
+author-0.5-0.25
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-0.5-0.25	98.9447736712
+writing output
+graph5_2nd.txt
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/graph5_2nd.txt	99.0926972581
+writing output
+author-0.25-0.5
+stating
+Loaded embeddings
+2918170
+prepared dataset. starting to train
+training done. starting to predict
+done
+../../graphs/edgelist/graph1	../../graphs/embeddings/author-0.25-0.5	98.8296331495
+writing output

@@ -1,0 +1,61 @@
+Sender: LSF System <lsfadmin@irlbxph004.irl.in.ibm.com>
+Subject: Job 1346: <bash c1.sh> in cluster <IRLGPU> Done
+
+Job <bash c1.sh> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <IRLGPU>.
+Job was executed on host(s) <irlbxph004.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <IRLGPU>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/downstream/clustering> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+bash c1.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   11285.25 sec.
+    Max Memory :                                 5875 MB
+    Average Memory :                             2949.56 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   7884 MB
+    Max Processes :                              4
+    Max Threads :                                52
+    Run time :                                   11409 sec.
+    Turnaround time :                            11387 sec.
+
+The output (if any) follows:
+
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-1-0.25	0.166841854067
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-4-0.5	0.161167409222
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-4-2	0.156446419075
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-1-2	0.157603077977
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-2-2	0.154993949744
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-4-1	0.164334421302
+../../graphs/labels/graph1_labels	../../graphs/embeddings/graph5_1st.txt	0.080770513644
+../../graphs/labels/graph1_labels	../../graphs/embeddings/graph5_all.txt	0.108485711261
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-1-1	0.1634102882
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-2-0.5	0.167902558033
+../../graphs/labels/graph1_labels	../../graphs/embeddings/graph5_dw	0.102072948377
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-0.5-0.5	0.162458275597
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-1-0.5	0.161949837105
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-2-1	0.161900535186
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-4-0.25	0.157326542578
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-4-4	0.157774814558
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-1-4	0.154812856077
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-0.25-0.25	0.161489958681
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-0.25-1	0.157603760902
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-0.5-2	0.156181721741
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-0.25-2	0.153286917376
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-0.5-4	0.152087214201
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-2-0.25	0.168585095134
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-0.5-1	0.160444806258
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-0.25-4	0.143900504708
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-2-4	0.161057434637
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-0.5-0.25	0.167361341692
+../../graphs/labels/graph1_labels	../../graphs/embeddings/graph5_2nd.txt	0.0864137825804
+../../graphs/labels/graph1_labels	../../graphs/embeddings/author-0.25-0.5	0.161260665567

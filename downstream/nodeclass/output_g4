@@ -1,0 +1,61 @@
+Sender: LSF System <lsfadmin@irlbxph006.irl.in.ibm.com>
+Subject: Job 7357: <bash nc.sh> in cluster <IRLGPU> Done
+
+Job <bash nc.sh> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <IRLGPU>.
+Job was executed on host(s) <irlbxph006.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <IRLGPU>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/downstream/nodeclass> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+bash nc.sh
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   489.92 sec.
+    Max Memory :                                 108 MB
+    Average Memory :                             50.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   2007 MB
+    Max Processes :                              4
+    Max Threads :                                52
+    Run time :                                   133 sec.
+    Turnaround time :                            148 sec.
+
+The output (if any) follows:
+
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-4-0.25	0.120948234156	0.0304527278562
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-4-4	0.129911591356	0.0347462527723
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-0.5-2	0.125866336634	0.0334127858076
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-0.5-0.5	0.128535980149	0.0360618181763
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-2-1	0.125	0.0319338898991
+../../graphs/labels/graph4_labels	../../graphs/embeddings/graph6_dw	0.119284294235	0.028983263757
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-0.25-4	0.127374573794	0.0367890920402
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-4-0.5	0.123956799215	0.0299545672766
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-0.5-1	0.126366799205	0.0297314783196
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-2-2	0.129494655005	0.0304131288138
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-0.25-2	0.128006872852	0.031138315492
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-0.25-1	0.125802469136	0.0347848251144
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-2-4	0.12949286066	0.0361993998432
+../../graphs/labels/graph4_labels	../../graphs/embeddings/graph6_2nd.txt	0.135915145535	0.0378890572168
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-0.25-0.25	0.124387254902	0.028444829299
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-1-1	0.125924100542	0.0286125444261
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-4-2	0.130429417572	0.0362869899676
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-2-0.25	0.125794621027	0.0295217603709
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-0.5-0.25	0.118211260588	0.028777662518
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-1-0.5	0.12798343887	0.0367341733717
+../../graphs/labels/graph4_labels	../../graphs/embeddings/graph6_1st.txt	0.128268376912	0.03285530843
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-1-4	0.131681243926	0.0353331326049
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-0.25-0.5	0.126111660079	0.0324247220421
+../../graphs/labels/graph4_labels	../../graphs/embeddings/graph6_all.txt	0.139368524914	0.039785390345
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-4-1	0.127274963109	0.0371668355134
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-2-0.5	0.12859931674	0.0361769883234
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-1-2	0.128613424792	0.0303632582894
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-1-0.25	0.127688172043	0.031701382909
+../../graphs/labels/graph4_labels	../../graphs/embeddings/word-0.5-4	0.126278616659	0.0348594571286

@@ -1,0 +1,35 @@
+Sender: LSF System <lsfadmin@irlbxph006.irl.in.ibm.com>
+Subject: Job 10894: <python outlier_detection_3_6.py> in cluster <IRLGPU> Done
+
+Job <python outlier_detection_3_6.py> was submitted from host <irlbxvm047.irl.in.ibm.com> by user <ayushidalmia> in cluster <IRLGPU>.
+Job was executed on host(s) <irlbxph006.irl.in.ibm.com>, in queue <normal>, as user <ayushidalmia> in cluster <IRLGPU>.
+</home/ayushidalmia> was used as the home directory.
+</home/ayushidalmia/interpretNode/feature_computation> was used as the working directory.
+Started at Results reported on 
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python outlier_detection_3_6.py
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   199462.53 sec.
+    Max Memory :                                 4075 MB
+    Average Memory :                             4065.44 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   5879 MB
+    Max Processes :                              3
+    Max Threads :                                4
+    Run time :                                   249591 sec.
+    Turnaround time :                            249609 sec.
+
+The output (if any) follows:
+
+['paper-0.25-0.25', 'paper-0.25-0.5', 'paper-0.25-1', 'paper-0.25-2', 'paper-0.25-4', 'paper-0.5-0.25', 'paper-0.5-0.5', 'paper-0.5-1', 'paper-0.5-2', 'paper-0.5-4', 'paper-1-0.25', 'paper-1-0.5', 'paper-1-1', 'paper-1-2', 'paper-1-4', 'paper-2-0.25', 'paper-2-0.5', 'paper-2-1', 'paper-2-2', 'paper-2-4', 'paper-4-0.25', 'paper-4-0.5', 'paper-4-1', 'paper-4-2', 'paper-4-4']
+paper-1-2
+local_reachibility_distance computed. computing LOF...
